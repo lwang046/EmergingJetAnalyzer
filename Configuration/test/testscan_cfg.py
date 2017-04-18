@@ -133,7 +133,7 @@ process.p = cms.Path( skimStep * testingStep * analyzeStep )
 #    #else                       : process.out.outputCommands.extend(cms.untracked.vstring('keep *_jetFilter_*_*',))
  #   process.out.outputCommands.extend(cms.untracked.vstring('keep *_emJetAnalyzer_*_*',))
 addEdmOutput(process, options.data, options.sample)
-process.out.outputCommands.extend(cms.untracked.vstring('keep *_emJetAnalyzer_*_*',))
+process.out.outputCommands.extend(cms.untracked.vstring('keep *_emJetAnalyzer_*_*',))#keep relevant info
 process.out.fileName = cms.untracked.string('outputscan.root')
 
 ########################################
