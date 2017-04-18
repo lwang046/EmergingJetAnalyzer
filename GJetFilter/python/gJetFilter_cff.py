@@ -9,7 +9,6 @@ process.gJetFilter = cms.EDFilter("GJetFilter",
     maxDeltaPhi = cms.double(0.4), # Doesn't do anything
     minPtSelectedJet = cms.double(20.0),
     maxPtAdditionalJets = cms.double(20.0), # Doesn't do anything
-    #electronID = cms.string('cutBasedElectronID-Spring15-25ns-V1-standalone-loose'),
     #photonID = cms.string('cutBasedPhotonID-Spring15-25ns-V1-standalone-medium'),
     photonID = cms.string('cutBasedPhotonID-Spring15-50ns-V1-standalone-medium'),
 )
