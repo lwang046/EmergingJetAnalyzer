@@ -255,7 +255,7 @@ GJetFilter::filter(edm::Event& iEvent, const edm::EventSetup& iSetup)
     for ( auto it = photons->begin(); it != photons->end(); it++ ) {
       auto photon = *it;
       nPhoton++;
-      //if ( photon.pt() < minPtPhoton_ ) continue;
+      //if ( photon.pt() < minPtPhoton_ ) continue;//photon pT selection
       if( photon.pt() < 35.0 || photon.pt() > 90.0 ) continue;
       nGoodPhoton1++;
       if ( fabs(photon.eta()) > 1.4442 ) continue;
