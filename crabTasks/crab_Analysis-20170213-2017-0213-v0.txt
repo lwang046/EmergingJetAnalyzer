@@ -1,0 +1,11 @@
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-600ToInf_RunIIFall15DR76/GJets_HT-600ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_012820/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-400To600_RunIIFall15DR76/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_012849/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-200To400_RunIIFall15DR76/GJets_HT-200To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_012916/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-100To200_RunIIFall15DR76/GJets_HT-100To200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_012945/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-40To100_RunIIFall15DR76/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_013829/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-600ToInf_RunIISpring15DR74/GJets_HT-600ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_013858/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-400To600_RunIISpring15DR74/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_013930/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-100To400_RunIISpring15DR74/GJets_HT-100To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_014322/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-40To100_RunIISpring15DR74/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_014353/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-200To400_RunIISpring15DR74/GJets_HT-200To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_022020/
+/store/user/yofeng/GJet/ntuple/Analysis-20170213-v0/GJets_HT-100To200_RunIISpring15DR74/GJets_HT-100To200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170213/170214_022047/

@@ -1,0 +1,2 @@
+/store/user/yofeng/GJet/ntuple/Analysis-20170215-v0/GJetDataRun2015D-v3/SinglePhoton/Analysis-20170215/170215_234624/
+/store/user/yofeng/GJet/ntuple/Analysis-20170215-v0/GJetDataRun2015D-v4/SinglePhoton/Analysis-20170215/170215_234836/

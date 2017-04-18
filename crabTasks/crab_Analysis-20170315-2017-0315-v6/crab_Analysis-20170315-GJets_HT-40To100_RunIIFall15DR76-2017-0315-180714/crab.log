@@ -1,0 +1,599 @@
+['skim', 'analyze']
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+
+####################
+Adding Skim step
+####################
+
+Adding GJet Skim step.
+triggerSelection should be verified for new datasets.
+photonID should be modified for each global tag.
+ switching PAT Tau input to:  cms.InputTag("hpsPFTauProducer76xReMiniAOD")
+
+####################
+Adding Analyze step
+####################
+
+CMSSW_VERSION is CMSSW_7_6_3
+Using the following global tags [MC, DATA]:
+['76X_mcRun2_asymptotic_RunIIFall15DR76_v1', '76X_dataRun2_16Dec2015_v0']
+DEBUG 2017-03-15 18:07:14,746: 	 Executing command: 'submit'
+DEBUG 2017-03-15 18:07:14,752: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 18:07:14,760: 	 Checking credentials
+DEBUG 2017-03-15 18:07:14,760: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 18:07:14,760: 	 Getting proxy life time left
+DEBUG 2017-03-15 18:07:14,863: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42409
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:14,967: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42409
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:14,967: 	 Proxy valid for 11:46:49 hours
+DEBUG 2017-03-15 18:07:14,968: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-03-15 18:07:15,138: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:15,139: 	 Checking credentials
+DEBUG 2017-03-15 18:07:15,139: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 18:07:15,139: 	 Getting proxy life time left
+DEBUG 2017-03-15 18:07:15,242: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42408
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:15,345: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42408
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:15,345: 	 Proxy valid for 11:46:48 hours
+DEBUG 2017-03-15 18:07:15,449: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:16,896: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 18:07:17,004: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:17,004: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 18:07:17,004: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 18:07:18,609: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 380:47:21  (15.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:07:18,610: 	 Myproxy is valid: 1370841
+DEBUG 2017-03-15 18:07:18,610: 	 Command use: submit
+DEBUG 2017-03-15 18:07:18,610: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x2497950>]
+DEBUG 2017-03-15 18:07:20,380: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 18:07:20,380: 	 Instance is prod
+DEBUG 2017-03-15 18:07:20,380: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 18:07:20,381: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 18:07:20,381: 	 Started submission
+DEBUG 2017-03-15 18:07:20,381: 	 Working on /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 18:07:21,916: 	 Loading required information from the environment
+DEBUG 2017-03-15 18:07:21,916: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-15 18:07:21,916: 	 Loading required information from the environment
+DEBUG 2017-03-15 18:07:21,916: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-15 18:07:21,926: 	 UNIQUE NAME: tarUUID 4430c892-aa91-47b2-9cc7-c8ac09363845 
+DEBUG 2017-03-15 18:07:21,927: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crabTasks/crab_Analysis-20170315-2017-0315-v6'
+config.General.requestName = 'Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714'
+config.section_('JobType')
+config.JobType.priority = 30
+config.JobType.psetName = 'Configuration/test/test_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.pyCfgParams = ['crab=1', 'data=0', 'sample=gjet']
+config.section_('Data')
+config.Data.inputDataset = '/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM'
+config.Data.outputDatasetTag = 'Analysis-20170315'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/yofeng/GJet/ntuple/Analysis-20170315-v6/GJets_HT-40To100_RunIIFall15DR76/'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.blacklist = ['T2_US_Purdue']
+config.Site.storageSite = 'T3_US_UMD'
+
+DEBUG 2017-03-15 18:07:21,927: 	 self.config.JobType.psetName: Configuration/test/test_cfg.py
+INFO 2017-03-15 18:07:21,927: 	 Importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-15 18:07:21,928: 	 Additional parameters for the CMSSW configuration are: ['crab=1', 'data=0', 'sample=gjet']
+INFO 2017-03-15 18:07:27,414: 	 Finished importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-15 18:07:27,414: 	 Writing CMSSW configuration to /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/inputs/PSet.py
+DEBUG 2017-03-15 18:07:30,553: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2017-03-15 18:07:30,553: 	 The following TFile output files will be collected: ['ntuple.root']
+DEBUG 2017-03-15 18:07:30,553: 	 The following user output files will be collected: []
+DEBUG 2017-03-15 18:07:30,553: 	 Loading required information from the environment
+DEBUG 2017-03-15 18:07:30,553: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-15 18:07:30,553: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/inputs/4430c892-aa91-47b2-9cc7-c8ac09363845default.tgz
+DEBUG 2017-03-15 18:07:30,643: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/lib
+DEBUG 2017-03-15 18:07:30,643: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/lib to tarball
+DEBUG 2017-03-15 18:07:34,093: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/biglib
+DEBUG 2017-03-15 18:07:34,093: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/biglib to tarball
+DEBUG 2017-03-15 18:07:34,095: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/module
+DEBUG 2017-03-15 18:07:34,214: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2017-03-15 18:07:34,239: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2017-03-15 18:07:34,258: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/data to tarball
+DEBUG 2017-03-15 18:07:34,267: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/interface to tarball
+DEBUG 2017-03-15 18:07:34,302: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmergingJetAnalyzer/interface to tarball
+DEBUG 2017-03-15 18:07:34,337: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmJetAnalyzer/interface to tarball
+DEBUG 2017-03-15 18:07:35,003: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/inputs/4430c892-aa91-47b2-9cc7-c8ac09363845default.tgz (6.700195.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-15 18:07:55,557: 	 Loading required information from the environment
+DEBUG 2017-03-15 18:07:55,557: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-15 18:07:55,557: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/inputs/debugFiles.tgz
+DEBUG 2017-03-15 18:07:55,623: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-15 18:07:57,196: 	 Result uploading input files: ccf5b27fe4b53ad774be5f70e5085a107f3a3564f9c5fa3811804e7f91f04082.tar.gz 
+WARNING 2017-03-15 18:07:57,196: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple.root']
+INFO 2017-03-15 18:07:57,196: 	 Sending the request to the server
+DEBUG 2017-03-15 18:07:57,197: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_UMD', 'algoargs': 1, 'cachefilename': 'ccf5b27fe4b53ad774be5f70e5085a107f3a3564f9c5fa3811804e7f91f04082.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 30, 'jobsw': 'CMSSW_7_6_3', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', 'lfn': '/store/user/yofeng/GJet/ntuple/Analysis-20170315-v6/GJets_HT-40To100_RunIIFall15DR76/', 'dryrun': 0, 'workflow': 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ntuple.root'], 'oneEventMode': 0, 'debugfilename': 'b69968aa35e923ad34607af7e85aea8a09c55a78642328bfdc0584091611cc28.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc493', 'totalunits': 1000, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'siteblacklist': ['T2_US_Purdue'], 'publishname2': 'Analysis-20170315'} 
+DEBUG 2017-03-15 18:07:57,197: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T3_US_UMD&algoargs=1&cachefilename=ccf5b27fe4b53ad774be5f70e5085a107f3a3564f9c5fa3811804e7f91f04082.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=30&jobsw=CMSSW_7_6_3&primarydataset=&inputdata=%2FGJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8%2FRunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1%2FAODSIM&lfn=%2Fstore%2Fuser%2Fyofeng%2FGJet%2Fntuple%2FAnalysis-20170315-v6%2FGJets_HT-40To100_RunIIFall15DR76%2F&dryrun=0&workflow=crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=b69968aa35e923ad34607af7e85aea8a09c55a78642328bfdc0584091611cc28.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc493&totalunits=1000&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Analysis-20170315&siteblacklist=T2_US_Purdue&tfileoutfiles=ntuple.root&edmoutfiles=output.root
+DEBUG 2017-03-15 18:07:58,985: 	 Result: {u'result': [{u'RequestName': u'170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714'}]}
+INFO 2017-03-15 18:07:59,048: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-03-15 18:07:59,049: 	 Task name: 170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 18:07:59,049: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-03-15 18:07:59,049: 	 About to return
+DEBUG 2017-03-15 18:38:03,788: 	 Executing command: 'status'
+DEBUG 2017-03-15 18:38:03,789: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 18:38:03,795: 	 Checking credentials
+DEBUG 2017-03-15 18:38:03,796: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 18:38:03,796: 	 Getting proxy life time left
+DEBUG 2017-03-15 18:38:03,899: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 40560
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:04,003: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 40560
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:04,003: 	 Proxy valid for 11:16:00 hours
+DEBUG 2017-03-15 18:38:04,114: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:04,114: 	 Checking credentials
+DEBUG 2017-03-15 18:38:04,114: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 18:38:04,114: 	 Getting proxy life time left
+DEBUG 2017-03-15 18:38:04,217: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 40559
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:04,321: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 40559
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:04,322: 	 Proxy valid for 11:15:59 hours
+DEBUG 2017-03-15 18:38:05,512: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 18:38:05,620: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:05,620: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 18:38:05,620: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 18:38:06,625: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 380:16:33  (15.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 18:38:06,626: 	 Myproxy is valid: 1368993
+DEBUG 2017-03-15 18:38:06,626: 	 Command use: status
+DEBUG 2017-03-15 18:38:06,626: 	 Options use: ['-d', 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714']
+DEBUG 2017-03-15 18:38:07,904: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 18:38:07,904: 	 Instance is prod
+DEBUG 2017-03-15 18:38:07,904: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 18:38:07,904: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 18:38:07,904: 	 Looking up detailed status of task 170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 18:38:10,043: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'running': 282, u'transferring': 2, u'idle': 27}, u'jobs': {u'216': {u'State': u'running'}, u'217': {u'State': u'running'}, u'214': {u'State': u'running'}, u'215': {u'State': u'running'}, u'212': {u'State': u'running'}, u'213': {u'State': u'running'}, u'210': {u'State': u'running'}, u'211': {u'State': u'running'}, u'264': {u'State': u'running'}, u'218': {u'State': u'running'}, u'219': {u'State': u'running'}, u'133': {u'State': u'running'}, u'132': {u'State': u'running'}, u'131': {u'State': u'running'}, u'130': {u'State': u'running'}, u'137': {u'State': u'running'}, u'136': {u'State': u'running'}, u'135': {u'State': u'running'}, u'134': {u'State': u'running'}, u'95': {u'State': u'running'}, u'139': {u'State': u'running'}, u'138': {u'State': u'running'}, u'225': {u'State': u'running'}, u'24': {u'State': u'running'}, u'25': {u'State': u'running'}, u'26': {u'State': u'running'}, u'27': {u'State': u'running'}, u'20': {u'State': u'running'}, u'21': {u'State': u'idle'}, u'22': {u'State': u'running'}, u'23': {u'State': u'running'}, u'223': {u'State': u'running'}, u'28': {u'State': u'running'}, u'29': {u'State': u'running'}, u'222': {u'State': u'running'}, u'289': {u'State': u'running'}, u'288': {u'State': u'running'}, u'4': {u'State': u'idle'}, u'281': {u'State': u'running'}, u'8': {u'State': u'running'}, u'283': {u'State': u'running'}, u'282': {u'State': u'running'}, u'285': {u'State': u'running'}, u'284': {u'State': u'running'}, u'287': {u'State': u'running'}, u'286': {u'State': u'running'}, u'227': {u'State': u'running'}, u'13': {u'State': u'running'}, u'120': {u'State': u'running'}, u'121': {u'State': u'running'}, u'122': {u'State': u'running'}, u'123': {u'State': u'running'}, u'124': {u'State': u'running'}, u'125': {u'State': u'running'}, u'265': {u'State': u'running'}, u'127': {u'State': u'running'}, u'128': {u'State': u'running'}, u'129': {u'State': u'running'}, u'269': {u'State': u'running'}, u'268': {u'State': u'running'}, u'69': {u'State': u'running'}, u'91': {u'State': u'running'}, u'59': {u'State': u'running'}, u'58': {u'State': u'running'}, u'55': {u'State': u'running'}, u'54': {u'State': u'running'}, u'57': {u'State': u'running'}, u'56': {u'State': u'running'}, u'51': {u'State': u'running'}, u'50': {u'State': u'running'}, u'53': {u'State': u'running'}, u'52': {u'State': u'running'}, u'63': {u'State': u'running'}, u'298': {u'State': u'running'}, u'299': {u'State': u'idle'}, u'296': {u'State': u'idle'}, u'297': {u'State': u'idle'}, u'294': {u'State': u'running'}, u'295': {u'State': u'idle'}, u'292': {u'State': u'running'}, u'293': {u'State': u'idle'}, u'290': {u'State': u'running'}, u'291': {u'State': u'idle'}, u'93': {u'State': u'running'}, u'199': {u'State': u'running'}, u'198': {u'State': u'running'}, u'147': {u'State': u'running'}, u'195': {u'State': u'running'}, u'194': {u'State': u'running'}, u'197': {u'State': u'running'}, u'310': {u'State': u'idle'}, u'191': {u'State': u'running'}, u'190': {u'State': u'running'}, u'193': {u'State': u'running'}, u'192': {u'State': u'running'}, u'115': {u'State': u'running'}, u'271': {u'State': u'running'}, u'88': {u'State': u'running'}, u'89': {u'State': u'running'}, u'111': {u'State': u'running'}, u'110': {u'State': u'running'}, u'113': {u'State': u'running'}, u'112': {u'State': u'running'}, u'82': {u'State': u'idle'}, u'83': {u'State': u'running'}, u'80': {u'State': u'running'}, u'81': {u'State': u'running'}, u'119': {u'State': u'running'}, u'118': {u'State': u'running'}, u'84': {u'State': u'running'}, u'85': {u'State': u'running'}, u'174': {u'State': u'running'}, u'140': {u'State': u'running'}, u'173': {u'State': u'running'}, u'141': {u'State': u'running'}, u'226': {u'State': u'running'}, u'172': {u'State': u'running'}, u'3': {u'State': u'idle'}, u'171': {u'State': u'running'}, u'7': {u'State': u'running'}, u'146': {u'State': u'running'}, u'231': {u'State': u'running'}, u'92': {u'State': u'running'}, u'170': {u'State': u'running'}, u'308': {u'State': u'idle'}, u'309': {u'State': u'idle'}, u'300': {u'State': u'idle'}, u'301': {u'State': u'idle'}, u'302': {u'State': u'idle'}, u'303': {u'State': u'idle'}, u'304': {u'State': u'idle'}, u'305': {u'State': u'idle'}, u'306': {u'State': u'idle'}, u'307': {u'State': u'idle'}, u'245': {u'State': u'running'}, u'244': {u'State': u'idle'}, u'247': {u'State': u'running'}, u'109': {u'State': u'running'}, u'241': {u'State': u'running'}, u'240': {u'State': u'running'}, u'243': {u'State': u'running'}, u'242': {u'State': u'running'}, u'102': {u'State': u'running'}, u'103': {u'State': u'running'}, u'100': {u'State': u'running'}, u'101': {u'State': u'running'}, u'106': {u'State': u'running'}, u'107': {u'State': u'running'}, u'104': {u'State': u'running'}, u'105': {u'State': u'running'}, u'39': {u'State': u'running'}, u'38': {u'State': u'running'}, u'33': {u'State': u'running'}, u'32': {u'State': u'running'}, u'31': {u'State': u'running'}, u'30': {u'State': u'running'}, u'37': {u'State': u'running'}, u'108': {u'State': u'running'}, u'35': {u'State': u'running'}, u'34': {u'State': u'running'}, u'145': {u'State': u'running'}, u'246': {u'State': u'running'}, u'94': {u'State': u'running'}, u'252': {u'State': u'transferring'}, u'70': {u'State': u'running'}, u'60': {u'State': u'running'}, u'61': {u'State': u'running'}, u'258': {u'State': u'running'}, u'259': {u'State': u'running'}, u'64': {u'State': u'running'}, u'65': {u'State': u'running'}, u'179': {u'State': u'running'}, u'178': {u'State': u'running'}, u'177': {u'State': u'running'}, u'176': {u'State': u'running'}, u'175': {u'State': u'running'}, u'251': {u'State': u'running'}, u'256': {u'State': u'running'}, u'257': {u'State': u'running'}, u'254': {u'State': u'running'}, u'255': {u'State': u'running'}, u'272': {u'State': u'running'}, u'249': {u'State': u'running'}, u'253': {u'State': u'running'}, u'248': {u'State': u'running'}, u'182': {u'State': u'running'}, u'183': {u'State': u'running'}, u'180': {u'State': u'running'}, u'181': {u'State': u'running'}, u'186': {u'State': u'running'}, u'187': {u'State': u'running'}, u'184': {u'State': u'running'}, u'6': {u'State': u'running'}, u'188': {u'State': u'running'}, u'189': {u'State': u'running'}, u'311': {u'State': u'idle'}, u'196': {u'State': u'running'}, u'221': {u'State': u'running'}, u'97': {u'State': u'running'}, u'276': {u'State': u'running'}, u'185': {u'State': u'running'}, u'142': {u'State': u'transferring'}, u'99': {u'State': u'running'}, u'98': {u'State': u'running'}, u'168': {u'State': u'running'}, u'169': {u'State': u'running'}, u'229': {u'State': u'running'}, u'228': {u'State': u'running'}, u'164': {u'State': u'running'}, u'165': {u'State': u'running'}, u'166': {u'State': u'running'}, u'167': {u'State': u'running'}, u'160': {u'State': u'running'}, u'161': {u'State': u'running'}, u'162': {u'State': u'running'}, u'163': {u'State': u'idle'}, u'11': {u'State': u'running'}, u'10': {u'State': u'running'}, u'220': {u'State': u'running'}, u'12': {u'State': u'running'}, u'15': {u'State': u'running'}, u'14': {u'State': u'running'}, u'66': {u'State': u'running'}, u'114': {u'State': u'running'}, u'19': {u'State': u'running'}, u'18': {u'State': u'running'}, u'143': {u'State': u'running'}, u'117': {u'State': u'running'}, u'273': {u'State': u'running'}, u'274': {u'State': u'running'}, u'17': {u'State': u'running'}, u'275': {u'State': u'running'}, u'151': {u'State': u'running'}, u'150': {u'State': u'running'}, u'153': {u'State': u'running'}, u'152': {u'State': u'running'}, u'116': {u'State': u'running'}, u'250': {u'State': u'running'}, u'157': {u'State': u'running'}, u'156': {u'State': u'running'}, u'159': {u'State': u'running'}, u'158': {u'State': u'running'}, u'62': {u'State': u'running'}, u'277': {u'State': u'running'}, u'36': {u'State': u'running'}, u'278': {u'State': u'running'}, u'90': {u'State': u'running'}, u'238': {u'State': u'running'}, u'239': {u'State': u'running'}, u'67': {u'State': u'running'}, u'234': {u'State': u'running'}, u'235': {u'State': u'running'}, u'16': {u'State': u'running'}, u'237': {u'State': u'running'}, u'230': {u'State': u'running'}, u'236': {u'State': u'running'}, u'232': {u'State': u'running'}, u'233': {u'State': u'running'}, u'224': {u'State': u'running'}, u'280': {u'State': u'running'}, u'48': {u'State': u'running'}, u'49': {u'State': u'running'}, u'46': {u'State': u'running'}, u'86': {u'State': u'running'}, u'44': {u'State': u'running'}, u'45': {u'State': u'running'}, u'42': {u'State': u'running'}, u'43': {u'State': u'running'}, u'40': {u'State': u'running'}, u'87': {u'State': u'running'}, u'1': {u'State': u'idle'}, u'5': {u'State': u'idle'}, u'9': {u'State': u'running'}, u'155': {u'State': u'running'}, u'201': {u'State': u'running'}, u'200': {u'State': u'running'}, u'203': {u'State': u'running'}, u'202': {u'State': u'running'}, u'205': {u'State': u'running'}, u'204': {u'State': u'running'}, u'207': {u'State': u'running'}, u'206': {u'State': u'running'}, u'209': {u'State': u'running'}, u'208': {u'State': u'running'}, u'148': {u'State': u'running'}, u'149': {u'State': u'running'}, u'77': {u'State': u'running'}, u'76': {u'State': u'running'}, u'75': {u'State': u'running'}, u'74': {u'State': u'running'}, u'73': {u'State': u'running'}, u'72': {u'State': u'running'}, u'71': {u'State': u'running'}, u'68': {u'State': u'running'}, u'154': {u'State': u'running'}, u'96': {u'State': u'running'}, u'79': {u'State': u'running'}, u'78': {u'State': u'running'}, u'2': {u'State': u'idle'}, u'263': {u'State': u'running'}, u'144': {u'State': u'running'}, u'262': {u'State': u'running'}, u'261': {u'State': u'running'}, u'270': {u'State': u'running'}, u'41': {u'State': u'running'}, u'260': {u'State': u'running'}, u'47': {u'State': u'running'}, u'279': {u'State': u'running'}, u'267': {u'State': u'running'}, u'126': {u'State': u'running'}, u'266': {u'State': u'running'}}, u'publication': {}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0120.cern.ch', u'publicationFailures': {}, u'outdatasets': None, u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'SUBMIT', u'totalJobdefs': 0, u'submissionTime': 1489615678, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'jobList': [[u'running', 216], [u'running', 217], [u'running', 214], [u'running', 215], [u'running', 212], [u'running', 213], [u'running', 210], [u'running', 211], [u'running', 165], [u'running', 264], [u'running', 265], [u'running', 218], [u'running', 133], [u'running', 132], [u'running', 131], [u'running', 130], [u'running', 137], [u'running', 136], [u'running', 135], [u'running', 134], [u'running', 139], [u'running', 138], [u'running', 166], [u'running', 24], [u'running', 25], [u'running', 26], [u'running', 27], [u'running', 20], [u'idle', 21], [u'running', 22], [u'running', 23], [u'running', 160], [u'running', 28], [u'running', 29], [u'running', 161], [u'running', 289], [u'running', 288], [u'idle', 4], [u'running', 281], [u'running', 8], [u'running', 283], [u'idle', 163], [u'running', 285], [u'running', 284], [u'running', 287], [u'running', 286], [u'running', 119], [u'running', 271], [u'running', 258], [u'running', 120], [u'running', 121], [u'running', 122], [u'running', 123], [u'running', 124], [u'running', 125], [u'running', 126], [u'running', 127], [u'running', 128], [u'running', 129], [u'running', 269], [u'running', 219], [u'running', 167], [u'running', 118], [u'running', 59], [u'running', 58], [u'running', 55], [u'running', 54], [u'running', 57], [u'running', 56], [u'running', 51], [u'running', 50], [u'running', 53], [u'running', 52], [u'running', 259], [u'running', 298], [u'idle', 299], [u'idle', 296], [u'idle', 297], [u'running', 294], [u'idle', 295], [u'running', 292], [u'idle', 293], [u'running', 290], [u'idle', 291], [u'running', 164], [u'running', 201], [u'running', 199], [u'running', 179], [u'running', 200], [u'running', 195], [u'running', 194], [u'running', 197], [u'running', 178], [u'running', 191], [u'running', 190], [u'running', 193], [u'running', 192], [u'running', 115], [u'running', 114], [u'running', 88], [u'running', 89], [u'running', 111], [u'running', 110], [u'running', 113], [u'running', 112], [u'idle', 82], [u'running', 83], [u'running', 80], [u'running', 81], [u'running', 86], [u'running', 87], [u'running', 84], [u'running', 85], [u'running', 268], [u'running', 251], [u'idle', 304], [u'running', 198], [u'running', 256], [u'running', 206], [u'running', 226], [u'running', 257], [u'idle', 3], [u'running', 177], [u'running', 254], [u'running', 7], [u'running', 247], [u'running', 273], [u'running', 255], [u'idle', 308], [u'idle', 309], [u'idle', 300], [u'idle', 301], [u'idle', 302], [u'idle', 303], [u'running', 225], [u'idle', 305], [u'idle', 306], [u'idle', 307], [u'running', 245], [u'idle', 244], [u'running', 108], [u'running', 109], [u'running', 241], [u'running', 240], [u'running', 243], [u'running', 242], [u'running', 102], [u'running', 103], [u'running', 100], [u'running', 101], [u'running', 106], [u'running', 107], [u'running', 104], [u'running', 105], [u'running', 39], [u'running', 38], [u'running', 33], [u'running', 32], [u'running', 31], [u'running', 30], [u'running', 37], [u'running', 36], [u'running', 35], [u'running', 34], [u'running', 246], [u'idle', 310], [u'running', 282], [u'transferring', 252], [u'running', 205], [u'running', 223], [u'running', 176], [u'running', 60], [u'running', 61], [u'running', 62], [u'running', 63], [u'running', 64], [u'running', 65], [u'running', 66], [u'running', 67], [u'running', 68], [u'running', 69], [u'running', 175], [u'running', 174], [u'running', 173], [u'running', 172], [u'running', 171], [u'running', 170], [u'running', 203], [u'running', 222], [u'running', 181], [u'running', 253], [u'running', 248], [u'running', 182], [u'running', 183], [u'running', 180], [u'idle', 2], [u'running', 162], [u'running', 187], [u'running', 184], [u'running', 6], [u'running', 220], [u'running', 186], [u'running', 188], [u'running', 189], [u'idle', 311], [u'running', 202], [u'running', 196], [u'running', 221], [u'running', 185], [u'running', 99], [u'running', 98], [u'running', 168], [u'running', 169], [u'running', 229], [u'running', 228], [u'running', 91], [u'running', 90], [u'running', 93], [u'running', 92], [u'running', 95], [u'running', 94], [u'running', 97], [u'running', 96], [u'running', 11], [u'running', 10], [u'running', 13], [u'running', 12], [u'running', 15], [u'running', 14], [u'running', 17], [u'running', 16], [u'running', 19], [u'running', 18], [u'running', 117], [u'running', 250], [u'running', 116], [u'running', 274], [u'running', 204], [u'running', 275], [u'running', 151], [u'running', 150], [u'running', 153], [u'running', 152], [u'running', 155], [u'running', 154], [u'running', 157], [u'running', 156], [u'running', 159], [u'running', 158], [u'running', 277], [u'running', 234], [u'running', 238], [u'running', 239], [u'running', 279], [u'running', 207], [u'running', 235], [u'running', 236], [u'running', 237], [u'running', 230], [u'running', 231], [u'running', 232], [u'running', 233], [u'running', 224], [u'running', 280], [u'running', 48], [u'running', 49], [u'running', 46], [u'running', 47], [u'running', 44], [u'running', 45], [u'running', 42], [u'running', 43], [u'running', 40], [u'running', 41], [u'idle', 1], [u'idle', 5], [u'running', 9], [u'running', 272], [u'running', 146], [u'running', 147], [u'running', 144], [u'running', 145], [u'transferring', 142], [u'running', 143], [u'running', 140], [u'running', 141], [u'running', 209], [u'running', 208], [u'running', 148], [u'running', 149], [u'running', 77], [u'running', 76], [u'running', 75], [u'running', 74], [u'running', 73], [u'running', 72], [u'running', 71], [u'running', 70], [u'running', 278], [u'running', 79], [u'running', 78], [u'running', 263], [u'running', 249], [u'running', 262], [u'running', 227], [u'running', 261], [u'running', 270], [u'running', 260], [u'running', 276], [u'running', 267], [u'running', 266]]}
+INFO 2017-03-15 18:38:10,043: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 18:38:10,044: 	 Task name:			170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 18:38:10,044: 	 Grid scheduler:			crab3@vocms0120.cern.ch
+INFO 2017-03-15 18:38:10,044: 	 Task status:			SUBMITTED
+INFO 2017-03-15 18:38:10,044: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 18:38:10,044: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 18:38:10,044: 	 
+Jobs status:			idle            8.7% ( 27/311)
+INFO 2017-03-15 18:38:10,044: 	 				running        90.7% (282/311)
+INFO 2017-03-15 18:38:10,044: 	 				transferring    0.6% (  2/311)
+INFO 2017-03-15 18:38:10,044: 	 
+No publication information available yet
+INFO 2017-03-15 18:38:10,048: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/crab.log
+DEBUG 2017-03-15 22:04:15,146: 	 Executing command: 'status'
+DEBUG 2017-03-15 22:04:15,147: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 22:04:15,179: 	 Checking credentials
+DEBUG 2017-03-15 22:04:15,179: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:04:15,179: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:04:15,286: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43182
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:15,395: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43182
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:15,395: 	 Proxy valid for 11:59:42 hours
+DEBUG 2017-03-15 22:04:15,516: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:15,517: 	 Checking credentials
+DEBUG 2017-03-15 22:04:15,517: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:04:15,517: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:04:15,624: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43182
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:15,732: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43182
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:15,733: 	 Proxy valid for 11:59:42 hours
+DEBUG 2017-03-15 22:04:17,252: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 22:04:17,369: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:17,369: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 22:04:17,369: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 22:04:18,980: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 376:50:21  (15.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:04:18,983: 	 Myproxy is valid: 1356621
+DEBUG 2017-03-15 22:04:18,983: 	 Command use: status
+DEBUG 2017-03-15 22:04:18,983: 	 Options use: ['-d', 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/']
+DEBUG 2017-03-15 22:04:20,276: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 22:04:20,276: 	 Instance is prod
+DEBUG 2017-03-15 22:04:20,276: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 22:04:20,276: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 22:04:20,277: 	 Looking up detailed status of task 170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+ERROR 2017-03-15 22:05:50,929: 	 Keyboard Interrupted
+INFO 2017-03-15 22:05:50,936: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/crab.log
+DEBUG 2017-03-15 22:05:56,537: 	 Executing command: 'status'
+DEBUG 2017-03-15 22:05:56,539: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 22:05:56,552: 	 Checking credentials
+DEBUG 2017-03-15 22:05:56,552: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:05:56,552: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:05:56,659: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43081
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:05:56,767: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43081
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:05:56,767: 	 Proxy valid for 11:58:01 hours
+DEBUG 2017-03-15 22:05:56,886: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:05:56,887: 	 Checking credentials
+DEBUG 2017-03-15 22:05:56,887: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:05:56,887: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:05:56,992: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43081
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:05:57,100: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43080
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:05:57,101: 	 Proxy valid for 11:58:01 hours
+ERROR 2017-03-15 22:05:58,746: 	 Keyboard Interrupted
+DEBUG 2017-03-15 22:06:02,941: 	 Executing command: 'status2'
+DEBUG 2017-03-15 22:06:02,942: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 22:06:02,952: 	 Checking credentials
+DEBUG 2017-03-15 22:06:02,953: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:06:02,953: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:06:03,061: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43074
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:03,166: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43074
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:03,167: 	 Proxy valid for 11:57:54 hours
+DEBUG 2017-03-15 22:06:03,286: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:03,286: 	 Checking credentials
+DEBUG 2017-03-15 22:06:03,287: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:06:03,287: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:06:03,394: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43074
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:03,499: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43074
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:03,500: 	 Proxy valid for 11:57:54 hours
+DEBUG 2017-03-15 22:06:04,747: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 22:06:04,864: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:04,864: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 22:06:04,864: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 22:06:05,976: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 376:48:34  (15.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:06:05,978: 	 Myproxy is valid: 1356514
+DEBUG 2017-03-15 22:06:05,978: 	 Command use: status2
+DEBUG 2017-03-15 22:06:05,978: 	 Options use: ['-d', 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/']
+DEBUG 2017-03-15 22:06:07,273: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 22:06:07,273: 	 Instance is prod
+DEBUG 2017-03-15 22:06:07,273: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 22:06:07,273: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 22:06:09,388: 	 Got information from server oracle database: {u'result': [u'170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714', u'None', u'SUBMITTED', u'2017-03-15 22:07:58.864013', u'None', u'2017-03-15 22:09:35.146850', u'None', u'CMSSW_7_6_3', u'slc6_amd64_gcc493', u'/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', u'[]', u"['T2_US_Purdue']", u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'1000', u'ccf5b27fe4b53ad774be5f70e5085a107f3a3564f9c5fa3811804e7f91f04082.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'yofeng', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng', u'cms', u'None', u'None', u'Analysis-20170315-00000000000000000000000000000000', u'T3_US_UMD', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'F', u'vocms052', u'[]', u'1250', u'1', u'2000', u'30', u"['/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/yofeng-Analysis-20170315-3916c1e008cecbed243ce9af6b0b45c9/USER']", u'http://vocms0120.cern.ch/mon/cms1006/170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple.root']", u"['output.root']", u'https://cmsweb.cern.ch/couchdb2', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0120.cern.ch', u'F', u'[]', u'T', u'/store/user/yofeng/GJet/ntuple/Analysis-20170315-v6/GJets_HT-40To100_RunIIFall15DR76/', u'T', u'None', u'F', u'F', u'F', u'None', u'GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8', u'asodb3', u'SUBMIT', u'4767758', u'b69968aa35e923ad34607af7e85aea8a09c55a78642328bfdc0584091611cc28.tar.gz', u'128.8.216.193', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-03-15 22:06:09,389: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:06:09,389: 	 Task name:			170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:06:09,389: 	 Grid scheduler:			crab3@vocms0120.cern.ch
+INFO 2017-03-15 22:06:09,389: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-03-15 22:06:09,390: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:06:09,390: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 22:06:09,390: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 4767758)
+DEBUG 2017-03-15 22:06:09,390: 	 Webdir is located at http://vocms0120.cern.ch/mon/cms1006/170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 22:06:09,390: 	 Retrieving 'status_cache' file from webdir
+ERROR 2017-03-15 22:07:02,838: 	 Keyboard Interrupted
+INFO 2017-03-15 22:07:02,845: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/crab.log
+DEBUG 2017-03-15 22:07:12,711: 	 Executing command: 'status'
+DEBUG 2017-03-15 22:07:12,712: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 22:07:12,724: 	 Checking credentials
+DEBUG 2017-03-15 22:07:12,724: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:07:12,725: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:07:12,832: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43005
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:12,940: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43005
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:12,941: 	 Proxy valid for 11:56:45 hours
+DEBUG 2017-03-15 22:07:13,061: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:13,062: 	 Checking credentials
+DEBUG 2017-03-15 22:07:13,062: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:07:13,062: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:07:13,170: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43004
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:13,279: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43004
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:13,279: 	 Proxy valid for 11:56:44 hours
+DEBUG 2017-03-15 22:07:14,790: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 22:07:14,903: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:14,904: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 22:07:14,904: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 22:07:15,914: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 376:47:24  (15.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:15,916: 	 Myproxy is valid: 1356444
+DEBUG 2017-03-15 22:07:15,916: 	 Command use: status
+DEBUG 2017-03-15 22:07:15,916: 	 Options use: ['-d', 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/']
+DEBUG 2017-03-15 22:07:17,484: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 22:07:17,485: 	 Instance is prod
+DEBUG 2017-03-15 22:07:17,485: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 22:07:17,485: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 22:07:17,485: 	 Looking up detailed status of task 170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 22:07:20,083: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 5, u'finished': 270, u'transferring': 23, u'running': 13}, u'jobs': {u'216': {u'State': u'finished'}, u'217': {u'State': u'finished'}, u'214': {u'State': u'finished'}, u'215': {u'State': u'finished'}, u'212': {u'State': u'finished'}, u'213': {u'State': u'finished'}, u'210': {u'State': u'finished'}, u'211': {u'State': u'finished'}, u'264': {u'State': u'finished'}, u'218': {u'State': u'finished'}, u'219': {u'State': u'finished'}, u'133': {u'State': u'finished'}, u'132': {u'State': u'finished'}, u'131': {u'State': u'finished'}, u'130': {u'State': u'finished'}, u'137': {u'State': u'finished'}, u'136': {u'State': u'transferring'}, u'135': {u'State': u'finished'}, u'134': {u'State': u'finished'}, u'95': {u'State': u'failed', u'Error': [139, u'CmsRunFailure', {}]}, u'139': {u'State': u'transferring'}, u'138': {u'State': u'finished'}, u'225': {u'State': u'running'}, u'24': {u'State': u'finished'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'finished'}, u'21': {u'State': u'finished'}, u'22': {u'State': u'finished'}, u'23': {u'State': u'transferring'}, u'223': {u'State': u'finished'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'finished'}, u'222': {u'State': u'finished'}, u'289': {u'State': u'finished'}, u'288': {u'State': u'finished'}, u'4': {u'State': u'finished'}, u'281': {u'State': u'finished'}, u'8': {u'State': u'finished'}, u'283': {u'State': u'finished'}, u'282': {u'State': u'finished'}, u'285': {u'State': u'finished'}, u'284': {u'State': u'finished'}, u'287': {u'State': u'finished'}, u'286': {u'State': u'finished'}, u'227': {u'State': u'finished'}, u'13': {u'State': u'finished'}, u'120': {u'State': u'finished'}, u'121': {u'State': u'finished'}, u'122': {u'State': u'finished'}, u'123': {u'State': u'transferring'}, u'124': {u'State': u'finished'}, u'125': {u'State': u'finished'}, u'265': {u'State': u'transferring'}, u'127': {u'State': u'transferring'}, u'128': {u'State': u'finished'}, u'129': {u'State': u'finished'}, u'269': {u'State': u'finished'}, u'268': {u'State': u'transferring'}, u'69': {u'State': u'finished'}, u'91': {u'State': u'finished'}, u'59': {u'State': u'finished'}, u'58': {u'State': u'finished'}, u'55': {u'State': u'finished'}, u'54': {u'State': u'finished'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'running'}, u'51': {u'State': u'transferring'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'finished'}, u'52': {u'State': u'finished'}, u'63': {u'State': u'finished'}, u'298': {u'State': u'finished'}, u'299': {u'State': u'finished'}, u'296': {u'State': u'finished'}, u'297': {u'State': u'finished'}, u'294': {u'State': u'finished'}, u'295': {u'State': u'finished'}, u'292': {u'State': u'finished'}, u'293': {u'State': u'finished'}, u'290': {u'State': u'finished'}, u'291': {u'State': u'finished'}, u'93': {u'State': u'running'}, u'199': {u'State': u'finished'}, u'198': {u'State': u'finished'}, u'147': {u'State': u'finished'}, u'195': {u'State': u'finished'}, u'194': {u'State': u'finished'}, u'197': {u'State': u'finished'}, u'310': {u'State': u'running'}, u'191': {u'State': u'finished'}, u'190': {u'State': u'finished'}, u'193': {u'State': u'finished'}, u'192': {u'State': u'finished'}, u'115': {u'State': u'finished'}, u'271': {u'State': u'finished'}, u'88': {u'State': u'finished'}, u'89': {u'State': u'finished'}, u'111': {u'State': u'finished'}, u'110': {u'State': u'finished'}, u'113': {u'State': u'finished'}, u'112': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'finished'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'finished'}, u'119': {u'State': u'finished'}, u'118': {u'State': u'running'}, u'84': {u'State': u'failed', u'Error': [50660, u'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}]}, u'85': {u'State': u'finished'}, u'174': {u'State': u'finished'}, u'140': {u'State': u'finished'}, u'173': {u'State': u'finished'}, u'141': {u'State': u'finished'}, u'226': {u'State': u'finished'}, u'172': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'171': {u'State': u'finished'}, u'7': {u'State': u'running'}, u'146': {u'State': u'finished'}, u'231': {u'State': u'finished'}, u'92': {u'State': u'finished'}, u'170': {u'State': u'finished'}, u'308': {u'State': u'running'}, u'309': {u'State': u'finished'}, u'300': {u'State': u'finished'}, u'301': {u'State': u'finished'}, u'302': {u'State': u'transferring'}, u'303': {u'State': u'transferring'}, u'304': {u'State': u'finished'}, u'305': {u'State': u'transferring'}, u'306': {u'State': u'finished'}, u'307': {u'State': u'running'}, u'245': {u'State': u'finished'}, u'244': {u'State': u'finished'}, u'247': {u'State': u'finished'}, u'109': {u'State': u'finished'}, u'241': {u'State': u'finished'}, u'240': {u'State': u'finished'}, u'243': {u'State': u'finished'}, u'242': {u'State': u'failed', u'Error': [139, u'CmsRunFailure', {}]}, u'102': {u'State': u'finished'}, u'103': {u'State': u'finished'}, u'100': {u'State': u'finished'}, u'101': {u'State': u'finished'}, u'106': {u'State': u'finished'}, u'107': {u'State': u'finished'}, u'104': {u'State': u'finished'}, u'105': {u'State': u'finished'}, u'39': {u'State': u'finished'}, u'38': {u'State': u'transferring'}, u'33': {u'State': u'running'}, u'32': {u'State': u'transferring'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'transferring'}, u'108': {u'State': u'finished'}, u'35': {u'State': u'finished'}, u'34': {u'State': u'finished'}, u'145': {u'State': u'finished'}, u'246': {u'State': u'finished'}, u'94': {u'State': u'finished'}, u'252': {u'State': u'finished'}, u'70': {u'State': u'failed', u'Error': [139, u'CmsRunFailure', {}]}, u'60': {u'State': u'finished'}, u'61': {u'State': u'finished'}, u'258': {u'State': u'finished'}, u'259': {u'State': u'finished'}, u'64': {u'State': u'finished'}, u'65': {u'State': u'running'}, u'179': {u'State': u'finished'}, u'178': {u'State': u'finished'}, u'177': {u'State': u'finished'}, u'176': {u'State': u'finished'}, u'175': {u'State': u'finished'}, u'251': {u'State': u'finished'}, u'256': {u'State': u'finished'}, u'257': {u'State': u'finished'}, u'254': {u'State': u'finished'}, u'255': {u'State': u'finished'}, u'272': {u'State': u'finished'}, u'249': {u'State': u'finished'}, u'253': {u'State': u'finished'}, u'248': {u'State': u'running'}, u'182': {u'State': u'finished'}, u'183': {u'State': u'finished'}, u'180': {u'State': u'finished'}, u'181': {u'State': u'finished'}, u'186': {u'State': u'finished'}, u'187': {u'State': u'finished'}, u'184': {u'State': u'finished'}, u'6': {u'State': u'finished'}, u'188': {u'State': u'finished'}, u'189': {u'State': u'finished'}, u'311': {u'State': u'running'}, u'196': {u'State': u'finished'}, u'221': {u'State': u'finished'}, u'97': {u'State': u'finished'}, u'276': {u'State': u'finished'}, u'185': {u'State': u'failed', u'Error': [50660, u'Job killed by HTCondor due to excessive memory use (RSS=2250 MB). Will not retry it.', {}]}, u'142': {u'State': u'finished'}, u'99': {u'State': u'finished'}, u'98': {u'State': u'finished'}, u'168': {u'State': u'finished'}, u'169': {u'State': u'finished'}, u'229': {u'State': u'finished'}, u'228': {u'State': u'finished'}, u'164': {u'State': u'finished'}, u'165': {u'State': u'finished'}, u'166': {u'State': u'finished'}, u'167': {u'State': u'finished'}, u'160': {u'State': u'finished'}, u'161': {u'State': u'finished'}, u'162': {u'State': u'finished'}, u'163': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'finished'}, u'220': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'66': {u'State': u'transferring'}, u'114': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'finished'}, u'143': {u'State': u'running'}, u'117': {u'State': u'finished'}, u'273': {u'State': u'finished'}, u'274': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'275': {u'State': u'finished'}, u'151': {u'State': u'finished'}, u'150': {u'State': u'finished'}, u'153': {u'State': u'finished'}, u'152': {u'State': u'finished'}, u'116': {u'State': u'finished'}, u'250': {u'State': u'finished'}, u'157': {u'State': u'transferring'}, u'156': {u'State': u'finished'}, u'159': {u'State': u'finished'}, u'158': {u'State': u'finished'}, u'62': {u'State': u'finished'}, u'277': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'278': {u'State': u'finished'}, u'90': {u'State': u'finished'}, u'238': {u'State': u'transferring'}, u'239': {u'State': u'finished'}, u'67': {u'State': u'finished'}, u'234': {u'State': u'finished'}, u'235': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'237': {u'State': u'finished'}, u'230': {u'State': u'finished'}, u'236': {u'State': u'finished'}, u'232': {u'State': u'finished'}, u'233': {u'State': u'finished'}, u'224': {u'State': u'finished'}, u'280': {u'State': u'finished'}, u'48': {u'State': u'finished'}, u'49': {u'State': u'finished'}, u'46': {u'State': u'finished'}, u'86': {u'State': u'finished'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'transferring'}, u'42': {u'State': u'finished'}, u'43': {u'State': u'transferring'}, u'40': {u'State': u'finished'}, u'87': {u'State': u'finished'}, u'1': {u'State': u'finished'}, u'5': {u'State': u'transferring'}, u'9': {u'State': u'transferring'}, u'155': {u'State': u'finished'}, u'201': {u'State': u'finished'}, u'200': {u'State': u'finished'}, u'203': {u'State': u'finished'}, u'202': {u'State': u'finished'}, u'205': {u'State': u'finished'}, u'204': {u'State': u'finished'}, u'207': {u'State': u'finished'}, u'206': {u'State': u'finished'}, u'209': {u'State': u'finished'}, u'208': {u'State': u'finished'}, u'148': {u'State': u'finished'}, u'149': {u'State': u'finished'}, u'77': {u'State': u'finished'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'finished'}, u'72': {u'State': u'finished'}, u'71': {u'State': u'finished'}, u'68': {u'State': u'finished'}, u'154': {u'State': u'finished'}, u'96': {u'State': u'transferring'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'finished'}, u'2': {u'State': u'finished'}, u'263': {u'State': u'finished'}, u'144': {u'State': u'finished'}, u'262': {u'State': u'finished'}, u'261': {u'State': u'finished'}, u'270': {u'State': u'finished'}, u'41': {u'State': u'finished'}, u'260': {u'State': u'finished'}, u'47': {u'State': u'transferring'}, u'279': {u'State': u'finished'}, u'267': {u'State': u'finished'}, u'126': {u'State': u'finished'}, u'266': {u'State': u'finished'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 87, u'published': 206}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0120.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/yofeng-Analysis-20170315-3916c1e008cecbed243ce9af6b0b45c9/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'SUBMIT', u'totalJobdefs': 0, u'submissionTime': 1489615678, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'jobList': [[u'finished', 216], [u'finished', 217], [u'finished', 214], [u'finished', 215], [u'finished', 212], [u'finished', 213], [u'finished', 210], [u'finished', 211], [u'finished', 165], [u'finished', 264], [u'transferring', 265], [u'finished', 218], [u'finished', 133], [u'finished', 132], [u'finished', 131], [u'finished', 130], [u'finished', 137], [u'transferring', 136], [u'finished', 135], [u'finished', 134], [u'transferring', 139], [u'finished', 138], [u'finished', 166], [u'finished', 24], [u'finished', 25], [u'finished', 26], [u'finished', 27], [u'finished', 20], [u'finished', 21], [u'finished', 22], [u'transferring', 23], [u'finished', 160], [u'finished', 28], [u'finished', 29], [u'finished', 161], [u'finished', 289], [u'finished', 288], [u'finished', 4], [u'finished', 281], [u'finished', 8], [u'finished', 283], [u'finished', 163], [u'finished', 285], [u'finished', 284], [u'finished', 287], [u'finished', 286], [u'finished', 119], [u'finished', 271], [u'finished', 258], [u'finished', 120], [u'finished', 121], [u'finished', 122], [u'transferring', 123], [u'finished', 124], [u'finished', 125], [u'finished', 126], [u'transferring', 127], [u'finished', 128], [u'finished', 129], [u'finished', 269], [u'finished', 219], [u'finished', 167], [u'running', 118], [u'finished', 59], [u'finished', 58], [u'finished', 55], [u'finished', 54], [u'finished', 57], [u'running', 56], [u'transferring', 51], [u'finished', 50], [u'finished', 53], [u'finished', 52], [u'finished', 259], [u'finished', 298], [u'finished', 299], [u'finished', 296], [u'finished', 297], [u'finished', 294], [u'finished', 295], [u'finished', 292], [u'finished', 293], [u'finished', 290], [u'finished', 291], [u'finished', 164], [u'finished', 201], [u'finished', 199], [u'finished', 179], [u'finished', 200], [u'finished', 195], [u'finished', 194], [u'finished', 197], [u'finished', 178], [u'finished', 191], [u'finished', 190], [u'finished', 193], [u'finished', 192], [u'finished', 115], [u'finished', 114], [u'finished', 88], [u'finished', 89], [u'finished', 111], [u'finished', 110], [u'finished', 113], [u'finished', 112], [u'finished', 82], [u'finished', 83], [u'finished', 80], [u'finished', 81], [u'finished', 86], [u'finished', 87], [u'failed', 84], [u'finished', 85], [u'transferring', 268], [u'finished', 251], [u'finished', 304], [u'finished', 198], [u'finished', 256], [u'finished', 206], [u'finished', 226], [u'finished', 257], [u'finished', 3], [u'finished', 177], [u'finished', 254], [u'running', 7], [u'finished', 247], [u'finished', 273], [u'finished', 255], [u'running', 308], [u'finished', 309], [u'finished', 300], [u'finished', 301], [u'transferring', 302], [u'transferring', 303], [u'running', 225], [u'transferring', 305], [u'finished', 306], [u'running', 307], [u'finished', 245], [u'finished', 244], [u'finished', 108], [u'finished', 109], [u'finished', 241], [u'finished', 240], [u'finished', 243], [u'failed', 242], [u'finished', 102], [u'finished', 103], [u'finished', 100], [u'finished', 101], [u'finished', 106], [u'finished', 107], [u'finished', 104], [u'finished', 105], [u'finished', 39], [u'transferring', 38], [u'running', 33], [u'transferring', 32], [u'finished', 31], [u'finished', 30], [u'transferring', 37], [u'finished', 36], [u'finished', 35], [u'finished', 34], [u'finished', 246], [u'running', 310], [u'finished', 282], [u'finished', 252], [u'finished', 205], [u'finished', 223], [u'finished', 176], [u'finished', 60], [u'finished', 61], [u'finished', 62], [u'finished', 63], [u'finished', 64], [u'running', 65], [u'transferring', 66], [u'finished', 67], [u'finished', 68], [u'finished', 69], [u'finished', 175], [u'finished', 174], [u'finished', 173], [u'finished', 172], [u'finished', 171], [u'finished', 170], [u'finished', 203], [u'finished', 222], [u'finished', 181], [u'finished', 253], [u'running', 248], [u'finished', 182], [u'finished', 183], [u'finished', 180], [u'finished', 2], [u'finished', 162], [u'finished', 187], [u'finished', 184], [u'finished', 6], [u'finished', 220], [u'finished', 186], [u'finished', 188], [u'finished', 189], [u'running', 311], [u'finished', 202], [u'finished', 196], [u'finished', 221], [u'failed', 185], [u'finished', 99], [u'finished', 98], [u'finished', 168], [u'finished', 169], [u'finished', 229], [u'finished', 228], [u'finished', 91], [u'finished', 90], [u'running', 93], [u'finished', 92], [u'failed', 95], [u'finished', 94], [u'finished', 97], [u'transferring', 96], [u'finished', 11], [u'finished', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'finished', 18], [u'finished', 117], [u'finished', 250], [u'finished', 116], [u'finished', 274], [u'finished', 204], [u'finished', 275], [u'finished', 151], [u'finished', 150], [u'finished', 153], [u'finished', 152], [u'finished', 155], [u'finished', 154], [u'transferring', 157], [u'finished', 156], [u'finished', 159], [u'finished', 158], [u'finished', 277], [u'finished', 234], [u'transferring', 238], [u'finished', 239], [u'finished', 279], [u'finished', 207], [u'finished', 235], [u'finished', 236], [u'finished', 237], [u'finished', 230], [u'finished', 231], [u'finished', 232], [u'finished', 233], [u'finished', 224], [u'finished', 280], [u'finished', 48], [u'finished', 49], [u'finished', 46], [u'transferring', 47], [u'finished', 44], [u'transferring', 45], [u'finished', 42], [u'transferring', 43], [u'finished', 40], [u'finished', 41], [u'finished', 1], [u'transferring', 5], [u'transferring', 9], [u'finished', 272], [u'finished', 146], [u'finished', 147], [u'finished', 144], [u'finished', 145], [u'finished', 142], [u'running', 143], [u'finished', 140], [u'finished', 141], [u'finished', 209], [u'finished', 208], [u'finished', 148], [u'finished', 149], [u'finished', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'finished', 73], [u'finished', 72], [u'finished', 71], [u'failed', 70], [u'finished', 278], [u'finished', 79], [u'finished', 78], [u'finished', 263], [u'finished', 249], [u'finished', 262], [u'finished', 227], [u'finished', 261], [u'finished', 270], [u'finished', 260], [u'finished', 276], [u'finished', 267], [u'finished', 266]]}
+INFO 2017-03-15 22:07:20,083: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:07:20,083: 	 Task name:			170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:07:20,083: 	 Grid scheduler:			crab3@vocms0120.cern.ch
+INFO 2017-03-15 22:07:20,084: 	 Task status:			SUBMITTED
+INFO 2017-03-15 22:07:20,084: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:07:20,084: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:07:20,085: 	 
+Jobs status:			failed          1.6% (  5/311)
+INFO 2017-03-15 22:07:20,085: 	 				finished       86.8% (270/311)
+INFO 2017-03-15 22:07:20,085: 	 				running         4.2% ( 13/311)
+INFO 2017-03-15 22:07:20,085: 	 				transferring    7.4% ( 23/311)
+INFO 2017-03-15 22:07:20,086: 	 
+Publication status:		idle           28.0% ( 87/311)
+				finished       66.2% (206/311)
+				unsubmitted     5.8% ( 18/311)
+INFO 2017-03-15 22:07:20,086: 	 
+Output dataset:			/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/yofeng-Analysis-20170315-3916c1e008cecbed243ce9af6b0b45c9/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8%2Fyofeng-Analysis-20170315-3916c1e008cecbed243ce9af6b0b45c9%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-15 22:07:20,087: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+  3 jobs failed with exit code 139
+
+  2 jobs failed with exit code 50660
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-15 22:07:20,091: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/crab.log
+DEBUG 2017-03-15 22:07:32,629: 	 Executing command: 'resubmit'
+DEBUG 2017-03-15 22:07:32,630: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-15 22:07:32,642: 	 Checking credentials
+DEBUG 2017-03-15 22:07:32,642: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:07:32,642: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:07:32,751: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42985
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:32,859: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42985
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:32,860: 	 Proxy valid for 11:56:25 hours
+DEBUG 2017-03-15 22:07:32,979: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:32,979: 	 Checking credentials
+DEBUG 2017-03-15 22:07:32,979: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-15 22:07:32,979: 	 Getting proxy life time left
+DEBUG 2017-03-15 22:07:33,086: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42984
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:33,191: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42984
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:33,191: 	 Proxy valid for 11:56:24 hours
+DEBUG 2017-03-15 22:07:34,505: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-15 22:07:34,613: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:34,613: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-15 22:07:34,613: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-15 22:07:35,418: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 376:47:04  (15.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-15 22:07:35,420: 	 Myproxy is valid: 1356424
+DEBUG 2017-03-15 22:07:35,420: 	 Command use: resubmit
+DEBUG 2017-03-15 22:07:35,421: 	 Options use: ['-d', 'crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/']
+DEBUG 2017-03-15 22:07:36,737: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-15 22:07:36,737: 	 Instance is prod
+DEBUG 2017-03-15 22:07:36,737: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-15 22:07:36,737: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-15 22:07:36,738: 	 Requesting resubmission of failed jobs in task 170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+INFO 2017-03-15 22:07:36,738: 	 Sending resubmit request to the server.
+DEBUG 2017-03-15 22:07:36,738: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170315_220758:yofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714'} 
+DEBUG 2017-03-15 22:07:36,738: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170315_220758%3Ayofeng_crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714
+DEBUG 2017-03-15 22:07:38,941: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-15 22:07:38,941: 	 Resubmit request sent to the server.
+INFO 2017-03-15 22:07:38,942: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-15 22:07:38,947: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170315-2017-0315-v6/crab_Analysis-20170315-GJets_HT-40To100_RunIIFall15DR76-2017-0315-180714/crab.log

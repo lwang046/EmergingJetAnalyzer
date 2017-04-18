@@ -1,0 +1,89 @@
+DEBUG 2017-04-16 20:34:58,214: 	 Executing command: 'checkwrite'
+DEBUG 2017-04-16 20:34:58,214: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-04-16 20:34:58,224: 	 Checking credentials
+DEBUG 2017-04-16 20:34:58,224: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-04-16 20:34:58,224: 	 Getting proxy life time left
+DEBUG 2017-04-16 20:34:58,331: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42760
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,436: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42760
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,436: 	 Proxy valid for 11:52:40 hours
+DEBUG 2017-04-16 20:34:58,550: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,550: 	 Checking credentials
+DEBUG 2017-04-16 20:34:58,550: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-04-16 20:34:58,551: 	 Getting proxy life time left
+DEBUG 2017-04-16 20:34:58,656: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42760
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,762: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42760
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,762: 	 Proxy valid for 11:52:40 hours
+DEBUG 2017-04-16 20:34:58,867: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-16 20:34:58,868: 	 Command use: checkwrite
+DEBUG 2017-04-16 20:34:58,868: 	 Options use: ['--site=T3_US_UMD']
+DEBUG 2017-04-16 20:34:58,868: 	 Instance is None
+DEBUG 2017-04-16 20:34:58,868: 	 Server base url is None
+DEBUG 2017-04-16 20:34:58,870: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u1701', 'maxcachereuse': 24.0, 'cachepath': '/tmp/.wmcore_cache_scGiiT/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u1701', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u1701', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x11e9e10>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/.wmcore_cache_scGiiT/cmsweb.cern.ch', 'cert': '/tmp/x509up_u1701', 'timeout': 300, 'req_cache_path': '/tmp/.wmcore_cache_scGiiT/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x11e9290>}, 'logger': <logging.Logger object at 0x11e9290>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/.wmcore_cache_scGiiT/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2017-04-16 20:34:58,870: 	 Will check write permission in the default location /store/user/<username>
+INFO 2017-04-16 20:34:58,870: 	 Retrieving DN from proxy...
+INFO 2017-04-16 20:34:59,672: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+INFO 2017-04-16 20:34:59,673: 	 Retrieving username from SiteDB...
+INFO 2017-04-16 20:35:02,045: 	 Username is: yofeng
+INFO 2017-04-16 20:35:02,045: 	 Validating LFN /store/user/yofeng...
+INFO 2017-04-16 20:35:02,045: 	 LFN /store/user/yofeng is valid.
+INFO 2017-04-16 20:35:02,081: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2017-04-16 20:35:02,082: 	 Will check write permission in /store/user/yofeng on site T3_US_UMD
+DEBUG 2017-04-16 20:35:02,146: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T3_US_UMD'], 'custodial': 'n', 'lfn': ['/store/user/yofeng/crab3checkwrite_20170416_203502/crab3checkwrite_20170416_203502.tmp'], 'protocol': 'srmv2'}
+INFO 2017-04-16 20:35:03,264: 	 
+Attempting to create (dummy) directory crab3checkwrite_20170416_203502 and copy (dummy) file crab3checkwrite_20170416_203502.tmp to /store/user/yofeng
+
+INFO 2017-04-16 20:35:03,268: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u1701 gfal-copy -p -v -t 180 file:///data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0416-v10/crab3checkwrite_20170416_203502.tmp 'srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/crab3checkwrite_20170416_203502.tmp'
+INFO 2017-04-16 20:35:03,268: 	 Please wait...
+INFO 2017-04-16 20:35:05,468: 	 
+Successfully created directory crab3checkwrite_20170416_203502 and copied file crab3checkwrite_20170416_203502.tmp to /store/user/yofeng
+INFO 2017-04-16 20:35:05,469: 	 
+Attempting to delete file srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/crab3checkwrite_20170416_203502.tmp
+
+INFO 2017-04-16 20:35:05,469: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u1701 gfal-rm -v -t 180 'srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/crab3checkwrite_20170416_203502.tmp'
+INFO 2017-04-16 20:35:05,469: 	 Please wait...
+INFO 2017-04-16 20:35:05,708: 	 
+Successfully deleted file srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/crab3checkwrite_20170416_203502.tmp
+INFO 2017-04-16 20:35:05,708: 	 
+Attempting to delete directory srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/
+
+INFO 2017-04-16 20:35:05,709: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u1701 gfal-rm -r -v -t 180 'srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/'
+INFO 2017-04-16 20:35:05,709: 	 Please wait...
+INFO 2017-04-16 20:35:06,040: 	 
+Successfully deleted directory srm://hepcms-0.umd.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/yofeng/crab3checkwrite_20170416_203502/
+INFO 2017-04-16 20:35:06,042: 	 
+Checkwrite Result:
+INFO 2017-04-16 20:35:06,042: 	 Success: Able to write in /store/user/yofeng on site T3_US_UMD

@@ -1,0 +1,645 @@
+***********************************************************
+************************************************************
+jet pt: 109.247 jet eta: 1.06058 jet phi: -1.52563
+trackRefs size: 5 jet_pt_sum: 71.4031
++++++++++++++++++++++++
+primary vertex:       0.0315255     0.00275501        1.50901
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0.882353
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 1.59475
++++++++++++++++++++++++
+primary vertex:       0.0311705   -9.77492e-05        1.72518
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0264192    -0.00267221       -9.13495
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0379705     0.00453589       -3.45532
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0337521     0.00146063       -1.87274
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0293655    -0.00117444        5.22423
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0302117    -0.00617338       -3.95101
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0323094     -0.0101603      0.0257814
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0366403     0.00873589       -2.73178
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0427595     -0.0104985        8.60857
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.033111     0.00128307      -0.871472
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0334787    -0.00891631       -2.95679
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:     0.000613062      0.0549516       -5.07066
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0287405     0.00851941       -7.04864
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0387805     -0.0318722       -1.04948
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0394362     -0.0261434        1.27892
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.074182     -0.0123999        7.30191
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:      -0.0123879     0.00852113        5.01256
+track pt 68.5044 track weight 0
+track pt 1.59475 track weight 0
+track pt 0.518796 track weight 0
+track pt 0.458423 track weight 0
+track pt 0.326738 track weight 0
+vertex_pt_sum 0
+jet pt 109.247 max_vertex_pt_sum: 1.59475 jet_pt_sum 71.4031 alphaMax 0.0223344
+***********************************************************
+************************************************************
+jet pt: 42.4458 jet eta: -0.861991 jet phi: -2.42965
+trackRefs size: 10 jet_pt_sum: 17.773
++++++++++++++++++++++++
+primary vertex:       0.0315255     0.00275501        1.50901
+track pt 4.91998 track weight 0.972549
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0.984314
+track pt 1.27058 track weight 0.960784
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0.87451
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0.956863
+vertex_pt_sum 8.77168
++++++++++++++++++++++++
+primary vertex:       0.0311705   -9.77492e-05        1.72518
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0264192    -0.00267221       -9.13495
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0379705     0.00453589       -3.45532
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0337521     0.00146063       -1.87274
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0293655    -0.00117444        5.22423
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0302117    -0.00617338       -3.95101
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0323094     -0.0101603      0.0257814
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0366403     0.00873589       -2.73178
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0427595     -0.0104985        8.60857
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.033111     0.00128307      -0.871472
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0334787    -0.00891631       -2.95679
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:     0.000613062      0.0549516       -5.07066
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0287405     0.00851941       -7.04864
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0387805     -0.0318722       -1.04948
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0394362     -0.0261434        1.27892
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.074182     -0.0123999        7.30191
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:      -0.0123879     0.00852113        5.01256
+track pt 4.91998 track weight 0
+track pt 4.45415 track weight 0
+track pt 2.04361 track weight 0
+track pt 1.65159 track weight 0
+track pt 1.27058 track weight 0
+track pt 1.01021 track weight 0
+track pt 0.969485 track weight 0
+track pt 0.533453 track weight 0
+track pt 0.52384 track weight 0
+track pt 0.396086 track weight 0
+vertex_pt_sum 0
+jet pt 42.4458 max_vertex_pt_sum: 8.77168 jet_pt_sum 17.773 alphaMax 0.493541
+***********************************************************
+************************************************************
+jet pt: 25.4346 jet eta: 2.08766 jet phi: -2.49058
+trackRefs size: 11 jet_pt_sum: 18.2612
++++++++++++++++++++++++
+primary vertex:       0.0315255     0.00275501        1.50901
+track pt 5.29306 track weight 0.980392
+track pt 4.65074 track weight 0.941176
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0.956863
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0.980392
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 12.6158
++++++++++++++++++++++++
+primary vertex:       0.0311705   -9.77492e-05        1.72518
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0264192    -0.00267221       -9.13495
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0379705     0.00453589       -3.45532
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0337521     0.00146063       -1.87274
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0293655    -0.00117444        5.22423
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0302117    -0.00617338       -3.95101
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0323094     -0.0101603      0.0257814
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0366403     0.00873589       -2.73178
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0427595     -0.0104985        8.60857
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.033111     0.00128307      -0.871472
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0334787    -0.00891631       -2.95679
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:     0.000613062      0.0549516       -5.07066
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0287405     0.00851941       -7.04864
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0387805     -0.0318722       -1.04948
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:       0.0394362     -0.0261434        1.27892
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:        0.074182     -0.0123999        7.30191
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
++++++++++++++++++++++++
+primary vertex:      -0.0123879     0.00852113        5.01256
+track pt 5.29306 track weight 0
+track pt 4.65074 track weight 0
+track pt 1.89396 track weight 0
+track pt 1.7628 track weight 0
+track pt 1.62474 track weight 0
+track pt 0.909166 track weight 0
+track pt 0.813575 track weight 0
+track pt 0.542798 track weight 0
+track pt 0.351016 track weight 0
+track pt 0.266729 track weight 0
+track pt 0.152629 track weight 0
+vertex_pt_sum 0
+jet pt 25.4346 max_vertex_pt_sum: 12.6158 jet_pt_sum 18.2612 alphaMax 0.69085

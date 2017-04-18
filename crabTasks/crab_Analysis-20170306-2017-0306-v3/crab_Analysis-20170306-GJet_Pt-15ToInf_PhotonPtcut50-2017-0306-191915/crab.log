@@ -1,0 +1,912 @@
+['skim', 'analyze']
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+
+####################
+Adding Skim step
+####################
+
+Adding GJet Skim step.
+triggerSelection should be verified for new datasets.
+photonID should be modified for each global tag.
+ switching PAT Tau input to:  cms.InputTag("hpsPFTauProducer76xReMiniAOD")
+
+####################
+Adding Analyze step
+####################
+
+CMSSW_VERSION is CMSSW_7_6_3
+Using the following global tags [MC, DATA]:
+['76X_mcRun2_asymptotic_RunIIFall15DR76_v1', '76X_dataRun2_16Dec2015_v0']
+DEBUG 2017-03-06 19:19:16,035: 	 Executing command: 'submit'
+DEBUG 2017-03-06 19:19:16,062: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-06 19:19:16,098: 	 Checking credentials
+DEBUG 2017-03-06 19:19:16,099: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 19:19:16,099: 	 Getting proxy life time left
+DEBUG 2017-03-06 19:19:16,202: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43177
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:16,305: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43177
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:16,305: 	 Proxy valid for 11:59:37 hours
+DEBUG 2017-03-06 19:19:16,306: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-03-06 19:19:16,417: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:16,417: 	 Checking credentials
+DEBUG 2017-03-06 19:19:16,417: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 19:19:16,417: 	 Getting proxy life time left
+DEBUG 2017-03-06 19:19:16,521: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43177
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:16,624: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43177
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:16,624: 	 Proxy valid for 11:59:37 hours
+DEBUG 2017-03-06 19:19:16,727: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:18,191: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-06 19:19:18,298: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:18,299: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-06 19:19:18,299: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-06 19:19:19,403: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 594:35:20  (24.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 19:19:19,404: 	 Myproxy is valid: 2140520
+DEBUG 2017-03-06 19:19:19,404: 	 Command use: submit
+DEBUG 2017-03-06 19:19:19,404: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x125e9d0>]
+DEBUG 2017-03-06 19:19:20,773: 	 CRABClient version: 3.3.1702
+DEBUG 2017-03-06 19:19:20,773: 	 Instance is prod
+DEBUG 2017-03-06 19:19:20,773: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-06 19:19:20,773: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-06 19:19:20,773: 	 Started submission
+DEBUG 2017-03-06 19:19:20,773: 	 Working on /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-06 19:19:22,189: 	 Loading required information from the environment
+DEBUG 2017-03-06 19:19:22,189: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-06 19:19:22,189: 	 Loading required information from the environment
+DEBUG 2017-03-06 19:19:22,189: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-06 19:19:22,209: 	 UNIQUE NAME: tarUUID f50bf064-ec90-4dca-adf6-2ddee629b3ee 
+DEBUG 2017-03-06 19:19:22,209: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crabTasks/crab_Analysis-20170306-2017-0306-v3'
+config.General.requestName = 'Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'
+config.section_('JobType')
+config.JobType.priority = 30
+config.JobType.psetName = 'Configuration/test/test_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.pyCfgParams = ['crab=1', 'data=0', 'sample=gjet']
+config.section_('Data')
+config.Data.inputDataset = '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM'
+config.Data.outputDatasetTag = 'Analysis-20170306'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/yofeng/GJet/ntuple/Analysis-20170306-v3/GJet_Pt-15ToInf_PhotonPtcut50/'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.blacklist = ['T2_US_Purdue']
+config.Site.storageSite = 'T3_US_UMD'
+
+DEBUG 2017-03-06 19:19:22,209: 	 self.config.JobType.psetName: Configuration/test/test_cfg.py
+INFO 2017-03-06 19:19:22,225: 	 Importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-06 19:19:22,225: 	 Additional parameters for the CMSSW configuration are: ['crab=1', 'data=0', 'sample=gjet']
+INFO 2017-03-06 19:19:31,591: 	 Finished importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-06 19:19:31,592: 	 Writing CMSSW configuration to /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/inputs/PSet.py
+DEBUG 2017-03-06 19:19:34,561: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2017-03-06 19:19:34,561: 	 The following TFile output files will be collected: ['ntuple.root']
+DEBUG 2017-03-06 19:19:34,561: 	 The following user output files will be collected: []
+DEBUG 2017-03-06 19:19:34,561: 	 Loading required information from the environment
+DEBUG 2017-03-06 19:19:34,561: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-06 19:19:34,561: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/inputs/f50bf064-ec90-4dca-adf6-2ddee629b3eedefault.tgz
+DEBUG 2017-03-06 19:19:34,610: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/lib
+DEBUG 2017-03-06 19:19:34,611: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/lib to tarball
+DEBUG 2017-03-06 19:19:38,984: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/biglib
+DEBUG 2017-03-06 19:19:38,984: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/biglib to tarball
+DEBUG 2017-03-06 19:19:38,986: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/module
+DEBUG 2017-03-06 19:19:39,314: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2017-03-06 19:19:39,386: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2017-03-06 19:19:39,606: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/data to tarball
+DEBUG 2017-03-06 19:19:39,639: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/interface to tarball
+DEBUG 2017-03-06 19:19:39,890: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmergingJetAnalyzer/interface to tarball
+DEBUG 2017-03-06 19:19:39,952: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmJetAnalyzer/interface to tarball
+DEBUG 2017-03-06 19:19:40,788: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/inputs/f50bf064-ec90-4dca-adf6-2ddee629b3eedefault.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-06 19:19:46,629: 	 Loading required information from the environment
+DEBUG 2017-03-06 19:19:46,629: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-06 19:19:46,629: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/inputs/debugFiles.tgz
+DEBUG 2017-03-06 19:19:46,732: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-06 19:19:48,267: 	 Result uploading input files: a60e243c9f490ae55c407d93c8a64178da955556ab5fa3ab265efad67e939b9a.tar.gz 
+WARNING 2017-03-06 19:19:48,267: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple.root']
+INFO 2017-03-06 19:19:48,267: 	 Sending the request to the server
+DEBUG 2017-03-06 19:19:48,267: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_UMD', 'algoargs': 1, 'cachefilename': 'a60e243c9f490ae55c407d93c8a64178da955556ab5fa3ab265efad67e939b9a.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 30, 'jobsw': 'CMSSW_7_6_3', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', 'lfn': '/store/user/yofeng/GJet/ntuple/Analysis-20170306-v3/GJet_Pt-15ToInf_PhotonPtcut50/', 'dryrun': 0, 'workflow': 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915', 'adduserfiles': [], 'nonprodsw': 0, 'tfileoutfiles': ['ntuple.root'], 'oneEventMode': 0, 'debugfilename': '46ecaffb6dd961cd23a8be8193c3e88eec550aab08316e5da7dcb701d812172c.tar.gz', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc493', 'totalunits': 1000, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'siteblacklist': ['T2_US_Purdue'], 'publishname2': 'Analysis-20170306'} 
+DEBUG 2017-03-06 19:19:48,267: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T3_US_UMD&algoargs=1&cachefilename=a60e243c9f490ae55c407d93c8a64178da955556ab5fa3ab265efad67e939b9a.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=30&jobsw=CMSSW_7_6_3&primarydataset=&inputdata=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2FRunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1%2FAODSIM&lfn=%2Fstore%2Fuser%2Fyofeng%2FGJet%2Fntuple%2FAnalysis-20170306-v3%2FGJet_Pt-15ToInf_PhotonPtcut50%2F&dryrun=0&workflow=crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915&nonprodsw=0&oneEventMode=0&debugfilename=46ecaffb6dd961cd23a8be8193c3e88eec550aab08316e5da7dcb701d812172c.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc493&totalunits=1000&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Analysis-20170306&siteblacklist=T2_US_Purdue&tfileoutfiles=ntuple.root&edmoutfiles=output.root
+DEBUG 2017-03-06 19:19:49,751: 	 Result: {u'result': [{u'RequestName': u'170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'}]}
+INFO 2017-03-06 19:19:49,811: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-03-06 19:19:49,811: 	 Task name: 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 19:19:49,811: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-03-06 19:19:49,811: 	 About to return
+DEBUG 2017-03-06 22:00:03,190: 	 Executing command: 'status'
+DEBUG 2017-03-06 22:00:03,191: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-06 22:00:03,197: 	 Checking credentials
+DEBUG 2017-03-06 22:00:03,197: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 22:00:03,197: 	 Getting proxy life time left
+DEBUG 2017-03-06 22:00:03,301: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:03,404: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:03,404: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-06 22:00:03,515: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:03,515: 	 Checking credentials
+DEBUG 2017-03-06 22:00:03,516: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 22:00:03,516: 	 Getting proxy life time left
+DEBUG 2017-03-06 22:00:03,619: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:03,722: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:03,722: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-06 22:00:04,801: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-06 22:00:04,909: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:04,909: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-06 22:00:04,909: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-06 22:00:06,314: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 591:54:33  (24.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:06,315: 	 Myproxy is valid: 2130873
+DEBUG 2017-03-06 22:00:06,315: 	 Command use: status
+DEBUG 2017-03-06 22:00:06,315: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-06 22:00:07,721: 	 CRABClient version: 3.3.1702
+DEBUG 2017-03-06 22:00:07,721: 	 Instance is prod
+DEBUG 2017-03-06 22:00:07,721: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-06 22:00:07,721: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-06 22:00:07,721: 	 Looking up detailed status of task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-06 22:00:18,872: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 12, u'running': 49, u'transferring': 12, u'finished': 17}, u'jobs': {u'24': {u'State': u'running'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'running'}, u'27': {u'State': u'running'}, u'20': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/6E1492CE-518E-E511-A327-0CC47A4D7628.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'21': {u'State': u'running'}, u'22': {u'State': u'running'}, u'23': {u'State': u'finished'}, u'28': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1097//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1097\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1096\n      [h] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1097//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/B2A3F10E-528E-E511-9911-0CC47A4C8E3C.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1097\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1096\n      [h] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'29': {u'State': u'running'}, u'4': {u'State': u'transferring'}, u'8': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/38C69D5A-578E-E511-AF31-0025905A60E4.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'59': {u'State': u'running'}, u'58': {u'State': u'running'}, u'55': {u'State': u'running'}, u'54': {u'State': u'running'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'running'}, u'51': {u'State': u'finished'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'running'}, u'52': {u'State': u'transferring'}, u'88': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-5.ultralight.org:1095\n      [h] Disabled source: transfer-4.ultralight.org:1096\n      [i] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/DA5777CF-C68D-E511-A228-0CC47A78A30E.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-5.ultralight.org:1095\n      [h] Disabled source: transfer-4.ultralight.org:1096\n      [i] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'transferring'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'running'}, u'86': {u'State': u'transferring'}, u'87': {u'State': u'running'}, u'84': {u'State': u'running'}, u'85': {u'State': u'transferring'}, u'3': {u'State': u'running'}, u'7': {u'State': u'running'}, u'39': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1096//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1096\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-5.ultralight.org:1095\n      [h] Disabled source: transfer-4.ultralight.org:1096\n      [i] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1096//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/02ED8D6C-E78D-E511-8521-0CC47A4D76AA.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1096\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-5.ultralight.org:1095\n      [h] Disabled source: transfer-4.ultralight.org:1096\n      [i] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'38': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1097//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1097\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root', flags=0x10, permissions=0660) => error '[ERROR] Operation expired' (errno=0, code=206). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1097//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/FCBF878E-538E-E511-A89B-0CC47A4D76AC.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1097\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'33': {u'State': u'running'}, u'32': {u'State': u'running'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'transferring'}, u'36': {u'State': u'transferring'}, u'35': {u'State': u'running'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'transferring'}, u'61': {u'State': u'running'}, u'62': {u'State': u'running'}, u'63': {u'State': u'failed', u'Error': [139, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FileReadError' occurred while\n   [0] Processing run: 1 lumi: 604 event: 119857\n   [1] Running path 'outpath'\n   [2] Calling event method for module PoolOutputModule/'out'\n   [3] Reading branch EventProductProvenance\n   [4] Calling XrdFile::readv()\n   [5] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [6] In XrdAdaptor::RequestManager::requestFailure()\nException Message:\nXrdAdaptor::RequestManager::requestFailure Open(name='root://xrootd-cms.infn.it:1194//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/9EAC0C65-D88D-E511-B353-003048FFCBB0.root', flags=0x10, permissions=0660, old source=transfer-4.ultralight.org:1096 (site T2_US_Caltech), new source=transfer-4.ultralight.org:1096 (site T2_US_Caltech)) => Xrootd server returned an excluded source\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=transfer-4.ultralight.org:1096 (site T2_US_Caltech)).\n      [b] Disabled source: transfer-4.ultralight.org:1096\n      [c] Active source: transfer-4.ultralight.org:1096 (site T2_US_Caltech)\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FileReadError' occurred while\n   [0] Processing run: 1 lumi: 604 event: 119857\n   [1] Running path 'outpath'\n   [2] Calling event method for module PoolOutputModule/'out'\n   [3] Reading branch EventProductProvenance\n   [4] Calling XrdFile::readv()\n   [5] XrdAdaptor::ClientRequest::HandleResponse() failure while running connection recovery\n   [6] In XrdAdaptor::RequestManager::requestFailure()\nException Message:\nXrdAdaptor::RequestManager::requestFailure Open(name='root://xrootd-cms.infn.it:1194//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/9EAC0C65-D88D-E511-B353-003048FFCBB0.root', flags=0x10, permissions=0660, old source=transfer-4.ultralight.org:1096 (site T2_US_Caltech), new source=transfer-4.ultralight.org:1096 (site T2_US_Caltech)) => Xrootd server returned an excluded source\n   Additional Info:\n      [a] Original error: '[ERROR] Operation expired' (errno=0, code=206, source=transfer-4.ultralight.org:1096 (site T2_US_Caltech)).\n      [b] Disabled source: transfer-4.ultralight.org:1096\n      [c] Active source: transfer-4.ultralight.org:1096 (site T2_US_Caltech)", u'exitCode': u'8021'}]}, u'64': {u'State': u'running'}, u'65': {u'State': u'running'}, u'66': {u'State': u'running'}, u'67': {u'State': u'running'}, u'68': {u'State': u'running'}, u'69': {u'State': u'running'}, u'2': {u'State': u'transferring'}, u'6': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1095\n      [g] Disabled source: transfer-4.ultralight.org:1096\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/2C3D6E99-468E-E511-8862-0CC47A4D764A.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1095\n      [g] Disabled source: transfer-4.ultralight.org:1096", u'exitCode': u'8028'}]}, u'90': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094\n      [h] Disabled source: cmsxrootd.fnal.gov:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/70000/FE9D6D29-6F8F-E511-B87F-001E67E71DEE.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094\n      [h] Disabled source: cmsxrootd.fnal.gov:1094", u'exitCode': u'8028'}]}, u'11': {u'State': u'running'}, u'10': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1095\n      [g] Disabled source: transfer-4.ultralight.org:1096\n      [h] Disabled source: transfer-4.ultralight.org:1094\n      [i] Disabled source: cmsxrootd.fnal.gov:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-5.ultralight.org:1095//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/4276680D-528E-E511-B086-0CC47A4D7674.root?tried=\n      [e] Problematic data server: transfer-5.ultralight.org:1095\n      [f] Disabled source: transfer-5.ultralight.org:1095\n      [g] Disabled source: transfer-4.ultralight.org:1096\n      [h] Disabled source: transfer-4.ultralight.org:1094\n      [i] Disabled source: cmsxrootd.fnal.gov:1094", u'exitCode': u'8028'}]}, u'13': {u'State': u'transferring'}, u'12': {u'State': u'running'}, u'15': {u'State': u'running'}, u'14': {u'State': u'running'}, u'17': {u'State': u'running'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'running'}, u'18': {u'State': u'running'}, u'48': {u'State': u'transferring'}, u'49': {u'State': u'running'}, u'46': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/24817BF4-E38D-E511-9321-002618943834.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-4.ultralight.org:1096\n      [g] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'47': {u'State': u'running'}, u'44': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1094//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/20000/1E03B6E2-CB8D-E511-AA69-002590596468.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1094\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1094", u'exitCode': u'8028'}]}, u'45': {u'State': u'finished'}, u'42': {u'State': u'running'}, u'43': {u'State': u'running'}, u'40': {u'State': u'running'}, u'41': {u'State': u'running'}, u'1': {u'State': u'running'}, u'5': {u'State': u'running'}, u'9': {u'State': u'running'}, u'77': {u'State': u'running'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'transferring'}, u'72': {u'State': u'running'}, u'71': {u'State': u'running'}, u'70': {u'State': u'running'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'running'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 28, u'published': 1}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0107.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'SUBMIT', u'totalJobdefs': 0, u'submissionTime': 1488845989, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', u'jobList': [[u'running', 24], [u'finished', 25], [u'running', 26], [u'running', 27], [u'failed', 20], [u'running', 21], [u'running', 22], [u'finished', 23], [u'failed', 28], [u'running', 29], [u'transferring', 4], [u'failed', 8], [u'running', 59], [u'running', 58], [u'running', 55], [u'running', 54], [u'finished', 57], [u'running', 56], [u'finished', 51], [u'finished', 50], [u'running', 53], [u'transferring', 52], [u'failed', 88], [u'finished', 89], [u'finished', 82], [u'transferring', 83], [u'finished', 80], [u'running', 81], [u'transferring', 86], [u'running', 87], [u'running', 84], [u'transferring', 85], [u'running', 3], [u'running', 7], [u'failed', 39], [u'failed', 38], [u'running', 33], [u'running', 32], [u'finished', 31], [u'finished', 30], [u'transferring', 37], [u'transferring', 36], [u'running', 35], [u'finished', 34], [u'transferring', 60], [u'running', 61], [u'running', 62], [u'failed', 63], [u'running', 64], [u'running', 65], [u'running', 66], [u'running', 67], [u'running', 68], [u'running', 69], [u'transferring', 2], [u'failed', 6], [u'failed', 90], [u'running', 11], [u'failed', 10], [u'transferring', 13], [u'running', 12], [u'running', 15], [u'running', 14], [u'running', 17], [u'finished', 16], [u'running', 19], [u'running', 18], [u'transferring', 48], [u'running', 49], [u'failed', 46], [u'running', 47], [u'failed', 44], [u'finished', 45], [u'running', 42], [u'running', 43], [u'running', 40], [u'running', 41], [u'running', 1], [u'running', 5], [u'running', 9], [u'running', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'transferring', 73], [u'running', 72], [u'running', 71], [u'running', 70], [u'finished', 79], [u'running', 78]]}
+INFO 2017-03-06 22:00:18,872: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 22:00:18,872: 	 Task name:			170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 22:00:18,872: 	 Grid scheduler:			crab3@vocms0107.cern.ch
+INFO 2017-03-06 22:00:18,872: 	 Task status:			SUBMITTED
+INFO 2017-03-06 22:00:18,873: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 22:00:18,873: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 22:00:18,873: 	 
+Jobs status:			failed         13.3% (12/90)
+INFO 2017-03-06 22:00:18,873: 	 				finished       18.9% (17/90)
+INFO 2017-03-06 22:00:18,873: 	 				running        54.4% (49/90)
+INFO 2017-03-06 22:00:18,873: 	 				transferring   13.3% (12/90)
+INFO 2017-03-06 22:00:18,873: 	 
+Publication status:		idle           31.1% (28/90)
+				finished        1.1% ( 1/90)
+				unsubmitted    67.8% (61/90)
+INFO 2017-03-06 22:00:18,873: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-06 22:00:18,874: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+11 jobs failed with exit code 8028
+
+ 1 jobs failed with exit code 139
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-06 22:00:18,878: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-06 22:00:26,608: 	 Executing command: 'resubmit'
+DEBUG 2017-03-06 22:00:26,608: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-06 22:00:26,615: 	 Checking credentials
+DEBUG 2017-03-06 22:00:26,616: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 22:00:26,616: 	 Getting proxy life time left
+DEBUG 2017-03-06 22:00:26,719: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43169
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:26,822: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43169
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:26,823: 	 Proxy valid for 11:59:29 hours
+DEBUG 2017-03-06 22:00:26,933: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:26,933: 	 Checking credentials
+DEBUG 2017-03-06 22:00:26,933: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-06 22:00:26,933: 	 Getting proxy life time left
+DEBUG 2017-03-06 22:00:27,037: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43169
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:27,140: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43168
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:27,140: 	 Proxy valid for 11:59:29 hours
+DEBUG 2017-03-06 22:00:28,273: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-06 22:00:28,382: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:28,382: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-06 22:00:28,382: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-06 22:00:29,187: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 591:54:10  (24.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-06 22:00:29,188: 	 Myproxy is valid: 2130850
+DEBUG 2017-03-06 22:00:29,188: 	 Command use: resubmit
+DEBUG 2017-03-06 22:00:29,188: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-06 22:00:30,293: 	 CRABClient version: 3.3.1702
+DEBUG 2017-03-06 22:00:30,294: 	 Instance is prod
+DEBUG 2017-03-06 22:00:30,294: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-06 22:00:30,294: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-06 22:00:30,294: 	 Requesting resubmission of failed jobs in task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-06 22:00:30,294: 	 Sending resubmit request to the server.
+DEBUG 2017-03-06 22:00:30,294: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'} 
+DEBUG 2017-03-06 22:00:30,294: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-06 22:00:33,544: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-06 22:00:33,544: 	 Resubmit request sent to the server.
+INFO 2017-03-06 22:00:33,544: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-06 22:00:33,547: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-07 01:34:07,325: 	 Executing command: 'status'
+DEBUG 2017-03-07 01:34:07,326: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-07 01:34:07,333: 	 Checking credentials
+DEBUG 2017-03-07 01:34:07,333: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-07 01:34:07,333: 	 Getting proxy life time left
+DEBUG 2017-03-07 01:34:07,436: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:07,540: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:07,540: 	 Proxy valid for 11:59:50 hours
+DEBUG 2017-03-07 01:34:07,678: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:07,678: 	 Checking credentials
+DEBUG 2017-03-07 01:34:07,678: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-07 01:34:07,678: 	 Getting proxy life time left
+DEBUG 2017-03-07 01:34:07,781: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:07,885: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43190
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:07,885: 	 Proxy valid for 11:59:50 hours
+DEBUG 2017-03-07 01:34:09,061: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-07 01:34:09,169: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:09,169: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-07 01:34:09,169: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-07 01:34:10,674: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 588:20:29  (24.5 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:10,675: 	 Myproxy is valid: 2118029
+DEBUG 2017-03-07 01:34:10,675: 	 Command use: status
+DEBUG 2017-03-07 01:34:10,675: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-07 01:34:11,755: 	 CRABClient version: 3.3.1702
+DEBUG 2017-03-07 01:34:11,756: 	 Instance is prod
+DEBUG 2017-03-07 01:34:11,756: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-07 01:34:11,756: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-07 01:34:11,756: 	 Looking up detailed status of task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-07 01:34:15,269: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 1, u'running': 4, u'transferring': 5, u'finished': 80}, u'jobs': {u'24': {u'State': u'running'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'transferring'}, u'20': {u'State': u'transferring'}, u'21': {u'State': u'finished'}, u'22': {u'State': u'running'}, u'23': {u'State': u'finished'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'finished'}, u'4': {u'State': u'finished'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'finished'}, u'58': {u'State': u'finished'}, u'55': {u'State': u'finished'}, u'54': {u'State': u'finished'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'finished'}, u'51': {u'State': u'finished'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'running'}, u'52': {u'State': u'finished'}, u'88': {u'State': u'transferring'}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'finished'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'finished'}, u'86': {u'State': u'finished'}, u'87': {u'State': u'finished'}, u'84': {u'State': u'finished'}, u'85': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'7': {u'State': u'finished'}, u'39': {u'State': u'finished'}, u'38': {u'State': u'finished'}, u'33': {u'State': u'finished'}, u'32': {u'State': u'finished'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'finished'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'finished'}, u'61': {u'State': u'finished'}, u'62': {u'State': u'finished'}, u'63': {u'State': u'finished'}, u'64': {u'State': u'running'}, u'65': {u'State': u'finished'}, u'66': {u'State': u'finished'}, u'67': {u'State': u'finished'}, u'68': {u'State': u'finished'}, u'69': {u'State': u'finished'}, u'2': {u'State': u'finished'}, u'6': {u'State': u'finished'}, u'90': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'failed', u'Error': [139, u'CmsRunFailure', {}]}, u'13': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'finished'}, u'48': {u'State': u'finished'}, u'49': {u'State': u'finished'}, u'46': {u'State': u'finished'}, u'47': {u'State': u'finished'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'finished'}, u'42': {u'State': u'finished'}, u'43': {u'State': u'finished'}, u'40': {u'State': u'finished'}, u'41': {u'State': u'finished'}, u'1': {u'State': u'finished'}, u'5': {u'State': u'transferring'}, u'9': {u'State': u'finished'}, u'77': {u'State': u'finished'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'finished'}, u'72': {u'State': u'finished'}, u'71': {u'State': u'finished'}, u'70': {u'State': u'transferring'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'finished'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 84, u'published': 1}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0107.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'', u'totalJobdefs': 0, u'submissionTime': 1488845989, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', u'jobList': [[u'running', 24], [u'finished', 25], [u'finished', 26], [u'transferring', 27], [u'transferring', 20], [u'finished', 21], [u'running', 22], [u'finished', 23], [u'finished', 28], [u'finished', 29], [u'finished', 4], [u'finished', 8], [u'finished', 59], [u'finished', 58], [u'finished', 55], [u'finished', 54], [u'finished', 57], [u'finished', 56], [u'finished', 51], [u'finished', 50], [u'running', 53], [u'finished', 52], [u'transferring', 88], [u'finished', 89], [u'finished', 82], [u'finished', 83], [u'finished', 80], [u'finished', 81], [u'finished', 86], [u'finished', 87], [u'finished', 84], [u'finished', 85], [u'finished', 3], [u'finished', 7], [u'finished', 39], [u'finished', 38], [u'finished', 33], [u'finished', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'finished', 35], [u'finished', 34], [u'finished', 60], [u'finished', 61], [u'finished', 62], [u'finished', 63], [u'running', 64], [u'finished', 65], [u'finished', 66], [u'finished', 67], [u'finished', 68], [u'finished', 69], [u'finished', 2], [u'finished', 6], [u'finished', 90], [u'finished', 11], [u'failed', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'finished', 18], [u'finished', 48], [u'finished', 49], [u'finished', 46], [u'finished', 47], [u'finished', 44], [u'finished', 45], [u'finished', 42], [u'finished', 43], [u'finished', 40], [u'finished', 41], [u'finished', 1], [u'transferring', 5], [u'finished', 9], [u'finished', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'finished', 73], [u'finished', 72], [u'finished', 71], [u'transferring', 70], [u'finished', 79], [u'finished', 78]]}
+INFO 2017-03-07 01:34:15,269: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-07 01:34:15,269: 	 Task name:			170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-07 01:34:15,270: 	 Grid scheduler:			crab3@vocms0107.cern.ch
+INFO 2017-03-07 01:34:15,270: 	 Task status:			SUBMITTED
+INFO 2017-03-07 01:34:15,270: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-07 01:34:15,270: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-07 01:34:15,270: 	 
+Jobs status:			failed          1.1% ( 1/90)
+INFO 2017-03-07 01:34:15,270: 	 				finished       88.9% (80/90)
+INFO 2017-03-07 01:34:15,270: 	 				running         4.4% ( 4/90)
+INFO 2017-03-07 01:34:15,270: 	 				transferring    5.6% ( 5/90)
+INFO 2017-03-07 01:34:15,270: 	 
+Publication status:		idle           93.3% (84/90)
+				finished        1.1% ( 1/90)
+				unsubmitted     5.6% ( 5/90)
+INFO 2017-03-07 01:34:15,270: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-07 01:34:15,271: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 139
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-07 01:34:15,275: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-07 01:34:22,275: 	 Executing command: 'resubmit'
+DEBUG 2017-03-07 01:34:22,276: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-07 01:34:22,283: 	 Checking credentials
+DEBUG 2017-03-07 01:34:22,283: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-07 01:34:22,283: 	 Getting proxy life time left
+DEBUG 2017-03-07 01:34:22,386: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43175
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:22,490: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43175
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:22,490: 	 Proxy valid for 11:59:35 hours
+DEBUG 2017-03-07 01:34:22,600: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:22,601: 	 Checking credentials
+DEBUG 2017-03-07 01:34:22,601: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-07 01:34:22,601: 	 Getting proxy life time left
+DEBUG 2017-03-07 01:34:22,704: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43175
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:22,807: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43175
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:22,808: 	 Proxy valid for 11:59:35 hours
+DEBUG 2017-03-07 01:34:24,198: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-07 01:34:24,308: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:24,308: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-07 01:34:24,308: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-07 01:34:25,212: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 588:20:14  (24.5 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-07 01:34:25,213: 	 Myproxy is valid: 2118014
+DEBUG 2017-03-07 01:34:25,213: 	 Command use: resubmit
+DEBUG 2017-03-07 01:34:25,213: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-07 01:34:28,657: 	 CRABClient version: 3.3.1702
+DEBUG 2017-03-07 01:34:28,657: 	 Instance is prod
+DEBUG 2017-03-07 01:34:28,657: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-07 01:34:28,658: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-07 01:34:28,658: 	 Requesting resubmission of failed jobs in task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-07 01:34:28,658: 	 Sending resubmit request to the server.
+DEBUG 2017-03-07 01:34:28,658: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'} 
+DEBUG 2017-03-07 01:34:28,658: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-07 01:34:31,625: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-07 01:34:31,625: 	 Resubmit request sent to the server.
+INFO 2017-03-07 01:34:31,626: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-07 01:34:31,628: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-08 13:37:53,109: 	 Executing command: 'status'
+DEBUG 2017-03-08 13:37:53,110: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-08 13:37:53,146: 	 Checking credentials
+DEBUG 2017-03-08 13:37:53,146: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 13:37:53,147: 	 Getting proxy life time left
+DEBUG 2017-03-08 13:37:53,251: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:53,356: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43191
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:53,357: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-08 13:37:53,544: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:53,545: 	 Checking credentials
+DEBUG 2017-03-08 13:37:53,545: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 13:37:53,545: 	 Getting proxy life time left
+DEBUG 2017-03-08 13:37:53,648: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:53,752: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43191
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:53,752: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-08 13:37:55,535: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-08 13:37:55,652: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:55,653: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-08 13:37:55,653: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-08 13:37:57,660: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 552:16:42  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:37:57,662: 	 Myproxy is valid: 1988202
+DEBUG 2017-03-08 13:37:57,663: 	 Command use: status
+DEBUG 2017-03-08 13:37:57,663: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-08 13:37:59,333: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-08 13:37:59,334: 	 Instance is prod
+DEBUG 2017-03-08 13:37:59,334: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-08 13:37:59,334: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-08 13:37:59,334: 	 Looking up detailed status of task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-08 13:38:01,787: 	 {u'status': u'FAILED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 2, u'finished': 88}, u'jobs': {u'24': {u'State': u'finished'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'finished'}, u'21': {u'State': u'finished'}, u'22': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1096//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1096\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1096\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root'\n   Additional Info:\n      [a] open() failed with system error 'No such file or directory' (error code 2)\n      [b] Input file /cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root could not be opened.\nFallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103). No additional data servers were found.\n      [d] Last URL tried: root://transfer-4.ultralight.org:1096//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root?tried=\n      [e] Problematic data server: transfer-4.ultralight.org:1096\n      [f] Disabled source: transfer-5.ultralight.org:1097\n      [g] Disabled source: transfer-4.ultralight.org:1096", u'exitCode': u'8028'}]}, u'23': {u'State': u'finished'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'finished'}, u'4': {u'State': u'finished'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'finished'}, u'58': {u'State': u'finished'}, u'55': {u'State': u'finished'}, u'54': {u'State': u'finished'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'finished'}, u'51': {u'State': u'finished'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'failed', u'Error': [50664, u'Not retrying job due to wall clock limit (job automatically killed on the worker node)', {}]}, u'52': {u'State': u'finished'}, u'88': {u'State': u'finished'}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'finished'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'finished'}, u'86': {u'State': u'finished'}, u'87': {u'State': u'finished'}, u'84': {u'State': u'finished'}, u'85': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'7': {u'State': u'finished'}, u'39': {u'State': u'finished'}, u'38': {u'State': u'finished'}, u'33': {u'State': u'finished'}, u'32': {u'State': u'finished'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'finished'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'finished'}, u'61': {u'State': u'finished'}, u'62': {u'State': u'finished'}, u'63': {u'State': u'finished'}, u'64': {u'State': u'finished'}, u'65': {u'State': u'finished'}, u'66': {u'State': u'finished'}, u'67': {u'State': u'finished'}, u'68': {u'State': u'finished'}, u'69': {u'State': u'finished'}, u'2': {u'State': u'finished'}, u'6': {u'State': u'finished'}, u'90': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'finished'}, u'13': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'finished'}, u'48': {u'State': u'finished'}, u'49': {u'State': u'finished'}, u'46': {u'State': u'finished'}, u'47': {u'State': u'finished'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'finished'}, u'42': {u'State': u'finished'}, u'43': {u'State': u'finished'}, u'40': {u'State': u'finished'}, u'41': {u'State': u'finished'}, u'1': {u'State': u'finished'}, u'5': {u'State': u'finished'}, u'9': {u'State': u'finished'}, u'77': {u'State': u'finished'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'finished'}, u'72': {u'State': u'finished'}, u'71': {u'State': u'finished'}, u'70': {u'State': u'finished'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'finished'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 0, u'published': 88}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0107.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'', u'totalJobdefs': 0, u'submissionTime': 1488845989, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', u'jobList': [[u'finished', 24], [u'finished', 25], [u'finished', 26], [u'finished', 27], [u'finished', 20], [u'finished', 21], [u'failed', 22], [u'finished', 23], [u'finished', 28], [u'finished', 29], [u'finished', 4], [u'finished', 8], [u'finished', 59], [u'finished', 58], [u'finished', 55], [u'finished', 54], [u'finished', 57], [u'finished', 56], [u'finished', 51], [u'finished', 50], [u'failed', 53], [u'finished', 52], [u'finished', 88], [u'finished', 89], [u'finished', 82], [u'finished', 83], [u'finished', 80], [u'finished', 81], [u'finished', 86], [u'finished', 87], [u'finished', 84], [u'finished', 85], [u'finished', 3], [u'finished', 7], [u'finished', 39], [u'finished', 38], [u'finished', 33], [u'finished', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'finished', 35], [u'finished', 34], [u'finished', 60], [u'finished', 61], [u'finished', 62], [u'finished', 63], [u'finished', 64], [u'finished', 65], [u'finished', 66], [u'finished', 67], [u'finished', 68], [u'finished', 69], [u'finished', 2], [u'finished', 6], [u'finished', 90], [u'finished', 11], [u'finished', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'finished', 18], [u'finished', 48], [u'finished', 49], [u'finished', 46], [u'finished', 47], [u'finished', 44], [u'finished', 45], [u'finished', 42], [u'finished', 43], [u'finished', 40], [u'finished', 41], [u'finished', 1], [u'finished', 5], [u'finished', 9], [u'finished', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'finished', 73], [u'finished', 72], [u'finished', 71], [u'finished', 70], [u'finished', 79], [u'finished', 78]]}
+INFO 2017-03-08 13:38:01,787: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 13:38:01,787: 	 Task name:			170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 13:38:01,787: 	 Grid scheduler:			crab3@vocms0107.cern.ch
+INFO 2017-03-08 13:38:01,788: 	 Task status:			FAILED
+INFO 2017-03-08 13:38:01,788: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 13:38:01,788: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 13:38:01,789: 	 
+Jobs status:			failed          2.2% ( 2/90)
+INFO 2017-03-08 13:38:01,789: 	 				finished       97.8% (88/90)
+INFO 2017-03-08 13:38:01,790: 	 
+Publication status:		finished       97.8% (88/90)
+				unsubmitted     2.2% ( 2/90)
+INFO 2017-03-08 13:38:01,790: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-08 13:38:01,791: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50664
+
+ 1 jobs failed with exit code 8028
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-08 13:38:01,822: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-08 13:38:26,295: 	 Executing command: 'resubmit'
+DEBUG 2017-03-08 13:38:26,296: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-08 13:38:26,302: 	 Checking credentials
+DEBUG 2017-03-08 13:38:26,302: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 13:38:26,302: 	 Getting proxy life time left
+DEBUG 2017-03-08 13:38:26,406: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43159
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:26,511: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43158
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:26,511: 	 Proxy valid for 11:59:19 hours
+DEBUG 2017-03-08 13:38:26,625: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:26,625: 	 Checking credentials
+DEBUG 2017-03-08 13:38:26,625: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 13:38:26,625: 	 Getting proxy life time left
+DEBUG 2017-03-08 13:38:26,734: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43159
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:26,839: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43158
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:26,839: 	 Proxy valid for 11:59:19 hours
+DEBUG 2017-03-08 13:38:28,099: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-08 13:38:28,206: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:28,207: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-08 13:38:28,207: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-08 13:38:29,313: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 552:16:10  (23.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 13:38:29,314: 	 Myproxy is valid: 1988170
+DEBUG 2017-03-08 13:38:29,314: 	 Command use: resubmit
+DEBUG 2017-03-08 13:38:29,314: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-08 13:38:30,470: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-08 13:38:30,471: 	 Instance is prod
+DEBUG 2017-03-08 13:38:30,471: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-08 13:38:30,471: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-08 13:38:30,471: 	 Requesting resubmission of failed jobs in task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 13:38:30,471: 	 Sending resubmit request to the server.
+DEBUG 2017-03-08 13:38:30,471: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'} 
+DEBUG 2017-03-08 13:38:30,471: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-08 13:38:39,070: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-08 13:38:39,071: 	 Resubmit request sent to the server.
+INFO 2017-03-08 13:38:39,071: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-08 13:38:39,073: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-08 21:00:53,020: 	 Executing command: 'status'
+DEBUG 2017-03-08 21:00:53,021: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-08 21:00:53,029: 	 Checking credentials
+DEBUG 2017-03-08 21:00:53,029: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 21:00:53,029: 	 Getting proxy life time left
+DEBUG 2017-03-08 21:00:53,132: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:53,236: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:53,236: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-08 21:00:53,376: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:53,376: 	 Checking credentials
+DEBUG 2017-03-08 21:00:53,376: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 21:00:53,376: 	 Getting proxy life time left
+DEBUG 2017-03-08 21:00:53,479: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:53,583: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43192
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:53,583: 	 Proxy valid for 11:59:52 hours
+DEBUG 2017-03-08 21:00:55,009: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-08 21:00:55,117: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:55,117: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-08 21:00:55,117: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-08 21:00:56,222: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 544:53:43  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:00:56,223: 	 Myproxy is valid: 1961623
+DEBUG 2017-03-08 21:00:56,223: 	 Command use: status
+DEBUG 2017-03-08 21:00:56,223: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-08 21:00:57,419: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-08 21:00:57,419: 	 Instance is prod
+DEBUG 2017-03-08 21:00:57,419: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-08 21:00:57,419: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-08 21:00:57,419: 	 Looking up detailed status of task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-08 21:01:00,125: 	 {u'status': u'FAILED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 1, u'finished': 89}, u'jobs': {u'24': {u'State': u'finished'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'finished'}, u'21': {u'State': u'finished'}, u'22': {u'State': u'failed', u'Error': [8028, u"CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root'\n   Additional Info:\n      [a] XrdCl::File::Open(name='root://madhatter.csc.fi/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] No such file\n' (errno=3011, code=400). No additional data servers were found.\n      [b] Last URL tried: root://madhatter.csc.fi:1094/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root?tried=\n      [c] Problematic data server: madhatter.csc.fi:1094\n      [d] Disabled source: madhatter.csc.fi:1094\n      [e] Input file root://madhatter.csc.fi:1094/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root could not be opened.\nFallback Input file root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [f] XrdCl::File::Open(name='root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103)\n      [g] Remote server already encountered a fatal error; no redirections were performed.\n", {u'type': u'Fatal Exception', u'details': u"An exception of category 'FallbackFileOpenError' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing input source of type PoolSource\n   [2] Calling RootFileSequenceBase::initTheFile()\n   [3] Calling StorageFactory::open()\n   [4] Calling XrdFile::open()\nException Message:\nFailed to open the file 'root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root'\n   Additional Info:\n      [a] XrdCl::File::Open(name='root://madhatter.csc.fi/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] No such file\n' (errno=3011, code=400). No additional data servers were found.\n      [b] Last URL tried: root://madhatter.csc.fi:1094/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root?tried=\n      [c] Problematic data server: madhatter.csc.fi:1094\n      [d] Disabled source: madhatter.csc.fi:1094\n      [e] Input file root://madhatter.csc.fi:1094/pnfs/csc.fi/data/cms/store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root could not be opened.\nFallback Input file root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root also could not be opened.\nOriginal exception info is above; fallback exception info is below.\n      [f] XrdCl::File::Open(name='root://xrootd-cms.infn.it//store/mc/RunIIFall15DR76/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/AODSIM/PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/10000/8661F85C-578E-E511-B461-0CC47A4C8E26.root', flags=0x10, permissions=0660) => error '[FATAL] Socket timeout' (errno=0, code=103)\n      [g] Remote server already encountered a fatal error; no redirections were performed.", u'exitCode': u'8028'}]}, u'23': {u'State': u'finished'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'finished'}, u'4': {u'State': u'finished'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'finished'}, u'58': {u'State': u'finished'}, u'55': {u'State': u'finished'}, u'54': {u'State': u'finished'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'finished'}, u'51': {u'State': u'finished'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'finished'}, u'52': {u'State': u'finished'}, u'88': {u'State': u'finished'}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'finished'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'finished'}, u'86': {u'State': u'finished'}, u'87': {u'State': u'finished'}, u'84': {u'State': u'finished'}, u'85': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'7': {u'State': u'finished'}, u'39': {u'State': u'finished'}, u'38': {u'State': u'finished'}, u'33': {u'State': u'finished'}, u'32': {u'State': u'finished'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'finished'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'finished'}, u'61': {u'State': u'finished'}, u'62': {u'State': u'finished'}, u'63': {u'State': u'finished'}, u'64': {u'State': u'finished'}, u'65': {u'State': u'finished'}, u'66': {u'State': u'finished'}, u'67': {u'State': u'finished'}, u'68': {u'State': u'finished'}, u'69': {u'State': u'finished'}, u'2': {u'State': u'finished'}, u'6': {u'State': u'finished'}, u'90': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'finished'}, u'13': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'finished'}, u'48': {u'State': u'finished'}, u'49': {u'State': u'finished'}, u'46': {u'State': u'finished'}, u'47': {u'State': u'finished'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'finished'}, u'42': {u'State': u'finished'}, u'43': {u'State': u'finished'}, u'40': {u'State': u'finished'}, u'41': {u'State': u'finished'}, u'1': {u'State': u'finished'}, u'5': {u'State': u'finished'}, u'9': {u'State': u'finished'}, u'77': {u'State': u'finished'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'finished'}, u'72': {u'State': u'finished'}, u'71': {u'State': u'finished'}, u'70': {u'State': u'finished'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'finished'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 0, u'published': 89}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0107.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'', u'totalJobdefs': 0, u'submissionTime': 1488845989, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', u'jobList': [[u'finished', 24], [u'finished', 25], [u'finished', 26], [u'finished', 27], [u'finished', 20], [u'finished', 21], [u'failed', 22], [u'finished', 23], [u'finished', 28], [u'finished', 29], [u'finished', 4], [u'finished', 8], [u'finished', 59], [u'finished', 58], [u'finished', 55], [u'finished', 54], [u'finished', 57], [u'finished', 56], [u'finished', 51], [u'finished', 50], [u'finished', 53], [u'finished', 52], [u'finished', 88], [u'finished', 89], [u'finished', 82], [u'finished', 83], [u'finished', 80], [u'finished', 81], [u'finished', 86], [u'finished', 87], [u'finished', 84], [u'finished', 85], [u'finished', 3], [u'finished', 7], [u'finished', 39], [u'finished', 38], [u'finished', 33], [u'finished', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'finished', 35], [u'finished', 34], [u'finished', 60], [u'finished', 61], [u'finished', 62], [u'finished', 63], [u'finished', 64], [u'finished', 65], [u'finished', 66], [u'finished', 67], [u'finished', 68], [u'finished', 69], [u'finished', 2], [u'finished', 6], [u'finished', 90], [u'finished', 11], [u'finished', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'finished', 18], [u'finished', 48], [u'finished', 49], [u'finished', 46], [u'finished', 47], [u'finished', 44], [u'finished', 45], [u'finished', 42], [u'finished', 43], [u'finished', 40], [u'finished', 41], [u'finished', 1], [u'finished', 5], [u'finished', 9], [u'finished', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'finished', 73], [u'finished', 72], [u'finished', 71], [u'finished', 70], [u'finished', 79], [u'finished', 78]]}
+INFO 2017-03-08 21:01:00,125: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 21:01:00,125: 	 Task name:			170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 21:01:00,125: 	 Grid scheduler:			crab3@vocms0107.cern.ch
+INFO 2017-03-08 21:01:00,125: 	 Task status:			FAILED
+INFO 2017-03-08 21:01:00,125: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 21:01:00,125: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 21:01:00,126: 	 
+Jobs status:			failed          1.1% ( 1/90)
+INFO 2017-03-08 21:01:00,126: 	 				finished       98.9% (89/90)
+INFO 2017-03-08 21:01:00,126: 	 
+Publication status:		finished       98.9% (89/90)
+				unsubmitted     1.1% ( 1/90)
+INFO 2017-03-08 21:01:00,126: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-08 21:01:00,126: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 8028
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-08 21:01:00,153: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-08 21:01:11,832: 	 Executing command: 'resubmit'
+DEBUG 2017-03-08 21:01:11,833: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-08 21:01:11,840: 	 Checking credentials
+DEBUG 2017-03-08 21:01:11,840: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 21:01:11,840: 	 Getting proxy life time left
+DEBUG 2017-03-08 21:01:11,944: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43174
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:12,048: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43174
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:12,048: 	 Proxy valid for 11:59:34 hours
+DEBUG 2017-03-08 21:01:12,159: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:12,159: 	 Checking credentials
+DEBUG 2017-03-08 21:01:12,159: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-08 21:01:12,159: 	 Getting proxy life time left
+DEBUG 2017-03-08 21:01:12,262: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43173
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:12,366: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43173
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:12,366: 	 Proxy valid for 11:59:33 hours
+DEBUG 2017-03-08 21:01:14,366: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-08 21:01:14,476: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:14,476: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-08 21:01:14,476: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-08 21:01:15,280: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 544:53:24  (22.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-08 21:01:15,281: 	 Myproxy is valid: 1961604
+DEBUG 2017-03-08 21:01:15,281: 	 Command use: resubmit
+DEBUG 2017-03-08 21:01:15,281: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-08 21:01:16,353: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-08 21:01:16,353: 	 Instance is prod
+DEBUG 2017-03-08 21:01:16,353: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-08 21:01:16,353: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-08 21:01:16,353: 	 Requesting resubmission of failed jobs in task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-08 21:01:16,353: 	 Sending resubmit request to the server.
+DEBUG 2017-03-08 21:01:16,353: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915'} 
+DEBUG 2017-03-08 21:01:16,353: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-08 21:01:18,480: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-08 21:01:18,480: 	 Resubmit request sent to the server.
+INFO 2017-03-08 21:01:18,481: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-08 21:01:18,483: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log
+DEBUG 2017-03-09 15:33:18,188: 	 Executing command: 'status'
+DEBUG 2017-03-09 15:33:18,188: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-09 15:33:18,196: 	 Checking credentials
+DEBUG 2017-03-09 15:33:18,197: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-09 15:33:18,197: 	 Getting proxy life time left
+DEBUG 2017-03-09 15:33:18,300: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43053
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:18,404: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43053
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:18,404: 	 Proxy valid for 11:57:33 hours
+DEBUG 2017-03-09 15:33:18,538: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:18,538: 	 Checking credentials
+DEBUG 2017-03-09 15:33:18,538: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-09 15:33:18,538: 	 Getting proxy life time left
+DEBUG 2017-03-09 15:33:18,641: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43053
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:18,745: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43053
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:18,745: 	 Proxy valid for 11:57:33 hours
+DEBUG 2017-03-09 15:33:19,821: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-09 15:33:19,929: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:19,930: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-09 15:33:19,930: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-09 15:33:21,035: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 526:21:19  (21.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-09 15:33:21,036: 	 Myproxy is valid: 1894879
+DEBUG 2017-03-09 15:33:21,036: 	 Command use: status
+DEBUG 2017-03-09 15:33:21,036: 	 Options use: ['-d', 'crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/']
+DEBUG 2017-03-09 15:33:23,144: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-09 15:33:23,144: 	 Instance is prod
+DEBUG 2017-03-09 15:33:23,144: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-09 15:33:23,144: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-09 15:33:23,144: 	 Looking up detailed status of task 170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+DEBUG 2017-03-09 15:33:25,074: 	 {u'status': u'COMPLETED', u'username': u'yofeng', u'jobsPerStatus': {u'finished': 90}, u'jobs': {u'24': {u'State': u'finished'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'finished'}, u'21': {u'State': u'finished'}, u'22': {u'State': u'finished'}, u'23': {u'State': u'finished'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'finished'}, u'4': {u'State': u'finished'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'finished'}, u'58': {u'State': u'finished'}, u'55': {u'State': u'finished'}, u'54': {u'State': u'finished'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'finished'}, u'51': {u'State': u'finished'}, u'50': {u'State': u'finished'}, u'53': {u'State': u'finished'}, u'52': {u'State': u'finished'}, u'88': {u'State': u'finished'}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'finished'}, u'80': {u'State': u'finished'}, u'81': {u'State': u'finished'}, u'86': {u'State': u'finished'}, u'87': {u'State': u'finished'}, u'84': {u'State': u'finished'}, u'85': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'7': {u'State': u'finished'}, u'39': {u'State': u'finished'}, u'38': {u'State': u'finished'}, u'33': {u'State': u'finished'}, u'32': {u'State': u'finished'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'finished'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'finished'}, u'61': {u'State': u'finished'}, u'62': {u'State': u'finished'}, u'63': {u'State': u'finished'}, u'64': {u'State': u'finished'}, u'65': {u'State': u'finished'}, u'66': {u'State': u'finished'}, u'67': {u'State': u'finished'}, u'68': {u'State': u'finished'}, u'69': {u'State': u'finished'}, u'2': {u'State': u'finished'}, u'6': {u'State': u'finished'}, u'90': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'finished'}, u'13': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'finished'}, u'48': {u'State': u'finished'}, u'49': {u'State': u'finished'}, u'46': {u'State': u'finished'}, u'47': {u'State': u'finished'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'finished'}, u'42': {u'State': u'finished'}, u'43': {u'State': u'finished'}, u'40': {u'State': u'finished'}, u'41': {u'State': u'finished'}, u'1': {u'State': u'finished'}, u'5': {u'State': u'finished'}, u'9': {u'State': u'finished'}, u'77': {u'State': u'finished'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'finished'}, u'72': {u'State': u'finished'}, u'71': {u'State': u'finished'}, u'70': {u'State': u'finished'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'finished'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 0, u'published': 90}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0107.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'', u'totalJobdefs': 0, u'submissionTime': 1488845989, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', u'jobList': [[u'finished', 24], [u'finished', 25], [u'finished', 26], [u'finished', 27], [u'finished', 20], [u'finished', 21], [u'finished', 22], [u'finished', 23], [u'finished', 28], [u'finished', 29], [u'finished', 4], [u'finished', 8], [u'finished', 59], [u'finished', 58], [u'finished', 55], [u'finished', 54], [u'finished', 57], [u'finished', 56], [u'finished', 51], [u'finished', 50], [u'finished', 53], [u'finished', 52], [u'finished', 88], [u'finished', 89], [u'finished', 82], [u'finished', 83], [u'finished', 80], [u'finished', 81], [u'finished', 86], [u'finished', 87], [u'finished', 84], [u'finished', 85], [u'finished', 3], [u'finished', 7], [u'finished', 39], [u'finished', 38], [u'finished', 33], [u'finished', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'finished', 35], [u'finished', 34], [u'finished', 60], [u'finished', 61], [u'finished', 62], [u'finished', 63], [u'finished', 64], [u'finished', 65], [u'finished', 66], [u'finished', 67], [u'finished', 68], [u'finished', 69], [u'finished', 2], [u'finished', 6], [u'finished', 90], [u'finished', 11], [u'finished', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'finished', 18], [u'finished', 48], [u'finished', 49], [u'finished', 46], [u'finished', 47], [u'finished', 44], [u'finished', 45], [u'finished', 42], [u'finished', 43], [u'finished', 40], [u'finished', 41], [u'finished', 1], [u'finished', 5], [u'finished', 9], [u'finished', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'finished', 73], [u'finished', 72], [u'finished', 71], [u'finished', 70], [u'finished', 79], [u'finished', 78]]}
+INFO 2017-03-09 15:33:25,075: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-09 15:33:25,075: 	 Task name:			170307_001949:yofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-09 15:33:25,075: 	 Grid scheduler:			crab3@vocms0107.cern.ch
+INFO 2017-03-09 15:33:25,075: 	 Task status:			COMPLETED
+INFO 2017-03-09 15:33:25,075: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-09 15:33:25,075: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170307_001949%3Ayofeng_crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915
+INFO 2017-03-09 15:33:25,075: 	 
+Jobs status:			finished      100.0% (90/90)
+INFO 2017-03-09 15:33:25,075: 	 
+Publication status:		finished      100.0% (90/90)
+INFO 2017-03-09 15:33:25,075: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170306-5fc285fcc1de9c7a8e1aeab2e6d06c5e%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-09 15:33:25,105: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170306-2017-0306-v3/crab_Analysis-20170306-GJet_Pt-15ToInf_PhotonPtcut50-2017-0306-191915/crab.log

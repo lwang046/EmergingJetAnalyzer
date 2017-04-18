@@ -1,0 +1,246 @@
+['skim', 'analyze']
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+
+####################
+Adding Skim step
+####################
+
+Adding GJet Skim step.
+triggerSelection should be verified for new datasets.
+photonID should be modified for each global tag.
+ switching PAT Tau input to:  cms.InputTag("hpsPFTauProducer76xReMiniAOD")
+
+####################
+Adding Analyze step
+####################
+
+CMSSW_VERSION is CMSSW_7_6_3
+Using the following global tags [MC, DATA]:
+['76X_mcRun2_asymptotic_RunIIFall15DR76_v1', '76X_dataRun2_16Dec2015_v0']
+DEBUG 2017-03-21 18:53:24,940: 	 Executing command: 'submit'
+DEBUG 2017-03-21 18:53:24,973: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-21 18:53:24,984: 	 Checking credentials
+DEBUG 2017-03-21 18:53:24,984: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-21 18:53:24,984: 	 Getting proxy life time left
+DEBUG 2017-03-21 18:53:25,087: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:25,190: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:25,191: 	 Proxy valid for 11:59:22 hours
+DEBUG 2017-03-21 18:53:25,191: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-03-21 18:53:25,303: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:25,303: 	 Checking credentials
+DEBUG 2017-03-21 18:53:25,303: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-21 18:53:25,303: 	 Getting proxy life time left
+DEBUG 2017-03-21 18:53:25,406: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:25,510: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43162
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:25,510: 	 Proxy valid for 11:59:22 hours
+DEBUG 2017-03-21 18:53:25,613: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:27,005: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-21 18:53:27,113: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:27,113: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-21 18:53:27,113: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-21 18:53:28,318: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 597:20:35  (24.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 18:53:28,319: 	 Myproxy is valid: 2150435
+DEBUG 2017-03-21 18:53:28,319: 	 Command use: submit
+DEBUG 2017-03-21 18:53:28,320: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x14fe990>]
+DEBUG 2017-03-21 18:53:29,409: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-21 18:53:29,409: 	 Instance is prod
+DEBUG 2017-03-21 18:53:29,409: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-21 18:53:29,409: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-21 18:53:29,409: 	 Started submission
+DEBUG 2017-03-21 18:53:29,409: 	 Working on /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+DEBUG 2017-03-21 18:53:30,917: 	 Loading required information from the environment
+DEBUG 2017-03-21 18:53:30,918: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-21 18:53:30,918: 	 Loading required information from the environment
+DEBUG 2017-03-21 18:53:30,918: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-21 18:53:30,942: 	 UNIQUE NAME: tarUUID 1043dc68-135b-4d01-9df6-c426a80c9ee4 
+DEBUG 2017-03-21 18:53:30,943: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crabTasks/crab_Analysis-20170321-2017-0321-v8'
+config.General.requestName = 'Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324'
+config.section_('JobType')
+config.JobType.priority = 30
+config.JobType.psetName = 'Configuration/test/test_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.pyCfgParams = ['crab=1', 'data=0', 'sample=gjet']
+config.section_('Data')
+config.Data.inputDataset = '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM'
+config.Data.outputDatasetTag = 'Analysis-20170321'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJet_Pt-15ToInf/'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.blacklist = ['T2_US_Purdue']
+config.Site.storageSite = 'T3_US_UMD'
+
+DEBUG 2017-03-21 18:53:30,943: 	 self.config.JobType.psetName: Configuration/test/test_cfg.py
+INFO 2017-03-21 18:53:30,944: 	 Importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-21 18:53:30,944: 	 Additional parameters for the CMSSW configuration are: ['crab=1', 'data=0', 'sample=gjet']
+INFO 2017-03-21 18:53:36,472: 	 Finished importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-21 18:53:36,473: 	 Writing CMSSW configuration to /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/inputs/PSet.py
+DEBUG 2017-03-21 18:53:39,399: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2017-03-21 18:53:39,399: 	 The following TFile output files will be collected: ['ntuple.root']
+DEBUG 2017-03-21 18:53:39,399: 	 The following user output files will be collected: []
+DEBUG 2017-03-21 18:53:39,399: 	 Loading required information from the environment
+DEBUG 2017-03-21 18:53:39,399: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-21 18:53:39,399: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/inputs/1043dc68-135b-4d01-9df6-c426a80c9ee4default.tgz
+DEBUG 2017-03-21 18:53:39,437: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/lib
+DEBUG 2017-03-21 18:53:39,437: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/lib to tarball
+DEBUG 2017-03-21 18:53:43,199: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/biglib
+DEBUG 2017-03-21 18:53:43,199: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/biglib to tarball
+DEBUG 2017-03-21 18:53:43,201: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/module
+DEBUG 2017-03-21 18:53:43,680: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2017-03-21 18:53:43,760: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2017-03-21 18:53:43,965: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/data to tarball
+DEBUG 2017-03-21 18:53:43,973: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/interface to tarball
+DEBUG 2017-03-21 18:53:44,133: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmergingJetAnalyzer/interface to tarball
+DEBUG 2017-03-21 18:53:44,189: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmJetAnalyzer/interface to tarball
+DEBUG 2017-03-21 18:53:45,168: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/inputs/1043dc68-135b-4d01-9df6-c426a80c9ee4default.tgz (6.701172.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-21 18:53:51,328: 	 Loading required information from the environment
+DEBUG 2017-03-21 18:53:51,328: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-21 18:53:51,328: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/inputs/debugFiles.tgz
+DEBUG 2017-03-21 18:53:51,332: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-21 18:53:52,635: 	 Result uploading input files: 628a5841b8dca0a8255893d46ee3618f1862a79c16dc323508b92c3767c9f163.tar.gz 
+WARNING 2017-03-21 18:53:52,636: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple.root']
+INFO 2017-03-21 18:53:52,636: 	 Sending the request to the server
+DEBUG 2017-03-21 18:53:52,636: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_UMD', 'algoargs': 1, 'cachefilename': '628a5841b8dca0a8255893d46ee3618f1862a79c16dc323508b92c3767c9f163.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 30, 'jobsw': 'CMSSW_7_6_3', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', 'lfn': '/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJet_Pt-15ToInf/', 'dryrun': 0, 'workflow': 'crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ntuple.root'], 'oneEventMode': 0, 'debugfilename': '50dcb173bb34a3dd608bc2bb414cba8a735c8c227e26df50b86a0315aa8292f2.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc493', 'totalunits': 1000, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'siteblacklist': ['T2_US_Purdue'], 'publishname2': 'Analysis-20170321'} 
+DEBUG 2017-03-21 18:53:52,636: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T3_US_UMD&algoargs=1&cachefilename=628a5841b8dca0a8255893d46ee3618f1862a79c16dc323508b92c3767c9f163.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=30&jobsw=CMSSW_7_6_3&primarydataset=&inputdata=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2FRunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1%2FAODSIM&lfn=%2Fstore%2Fuser%2Fyofeng%2FGJet%2Fntuple%2FAnalysis-20170321-v8%2FGJet_Pt-15ToInf%2F&dryrun=0&workflow=crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=50dcb173bb34a3dd608bc2bb414cba8a735c8c227e26df50b86a0315aa8292f2.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc493&totalunits=1000&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Analysis-20170321&siteblacklist=T2_US_Purdue&tfileoutfiles=ntuple.root&edmoutfiles=output.root
+DEBUG 2017-03-21 18:53:54,139: 	 Result: {u'result': [{u'RequestName': u'170321_225353:yofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324'}]}
+INFO 2017-03-21 18:53:54,140: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-03-21 18:53:54,140: 	 Task name: 170321_225353:yofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+INFO 2017-03-21 18:53:54,141: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-03-21 18:53:54,141: 	 About to return
+DEBUG 2017-03-21 22:26:34,623: 	 Executing command: 'status'
+DEBUG 2017-03-21 22:26:34,624: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-21 22:26:34,631: 	 Checking credentials
+DEBUG 2017-03-21 22:26:34,631: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-21 22:26:34,631: 	 Getting proxy life time left
+DEBUG 2017-03-21 22:26:34,734: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43065
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:34,838: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43065
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:34,838: 	 Proxy valid for 11:57:45 hours
+DEBUG 2017-03-21 22:26:34,950: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:34,950: 	 Checking credentials
+DEBUG 2017-03-21 22:26:34,950: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-21 22:26:34,950: 	 Getting proxy life time left
+DEBUG 2017-03-21 22:26:35,053: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43065
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:35,157: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43064
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:35,157: 	 Proxy valid for 11:57:45 hours
+DEBUG 2017-03-21 22:26:36,220: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-21 22:26:36,328: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:36,328: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-21 22:26:36,328: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-21 22:26:37,132: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 593:47:26  (24.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-21 22:26:37,133: 	 Myproxy is valid: 2137646
+DEBUG 2017-03-21 22:26:37,134: 	 Command use: status
+DEBUG 2017-03-21 22:26:37,134: 	 Options use: ['-d', 'crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324']
+DEBUG 2017-03-21 22:26:38,200: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-21 22:26:38,200: 	 Instance is prod
+DEBUG 2017-03-21 22:26:38,200: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-21 22:26:38,200: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-21 22:26:38,200: 	 Looking up detailed status of task 170321_225353:yofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+DEBUG 2017-03-21 22:26:40,317: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'finished': 40, u'transferring': 10, u'running': 40}, u'jobs': {u'24': {u'State': u'finished'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'finished'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'running'}, u'21': {u'State': u'running'}, u'22': {u'State': u'running'}, u'23': {u'State': u'running'}, u'28': {u'State': u'finished'}, u'29': {u'State': u'running'}, u'4': {u'State': u'transferring'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'running'}, u'58': {u'State': u'transferring'}, u'55': {u'State': u'running'}, u'54': {u'State': u'running'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'running'}, u'51': {u'State': u'transferring'}, u'50': {u'State': u'transferring'}, u'53': {u'State': u'finished'}, u'52': {u'State': u'running'}, u'88': {u'State': u'running'}, u'89': {u'State': u'finished'}, u'82': {u'State': u'finished'}, u'83': {u'State': u'running'}, u'80': {u'State': u'transferring'}, u'81': {u'State': u'running'}, u'86': {u'State': u'finished'}, u'87': {u'State': u'running'}, u'84': {u'State': u'finished'}, u'85': {u'State': u'finished'}, u'3': {u'State': u'finished'}, u'7': {u'State': u'finished'}, u'39': {u'State': u'running'}, u'38': {u'State': u'running'}, u'33': {u'State': u'finished'}, u'32': {u'State': u'finished'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'running'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'running'}, u'61': {u'State': u'running'}, u'62': {u'State': u'finished'}, u'63': {u'State': u'transferring'}, u'64': {u'State': u'running'}, u'65': {u'State': u'running'}, u'66': {u'State': u'running'}, u'67': {u'State': u'running'}, u'68': {u'State': u'transferring'}, u'69': {u'State': u'running'}, u'2': {u'State': u'finished'}, u'6': {u'State': u'running'}, u'90': {u'State': u'finished'}, u'11': {u'State': u'finished'}, u'10': {u'State': u'running'}, u'13': {u'State': u'finished'}, u'12': {u'State': u'finished'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'finished'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'running'}, u'48': {u'State': u'running'}, u'49': {u'State': u'running'}, u'46': {u'State': u'running'}, u'47': {u'State': u'running'}, u'44': {u'State': u'finished'}, u'45': {u'State': u'finished'}, u'42': {u'State': u'running'}, u'43': {u'State': u'running'}, u'40': {u'State': u'running'}, u'41': {u'State': u'finished'}, u'1': {u'State': u'running'}, u'5': {u'State': u'running'}, u'9': {u'State': u'finished'}, u'77': {u'State': u'running'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'finished'}, u'74': {u'State': u'finished'}, u'73': {u'State': u'running'}, u'72': {u'State': u'running'}, u'71': {u'State': u'running'}, u'70': {u'State': u'transferring'}, u'79': {u'State': u'transferring'}, u'78': {u'State': u'transferring'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 49, u'published': 1}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0199.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170321-3916c1e008cecbed243ce9af6b0b45c9/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'SUBMIT', u'totalJobdefs': 0, u'submissionTime': 1490136834, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'jobList': [[u'finished', 24], [u'finished', 25], [u'finished', 26], [u'finished', 27], [u'running', 20], [u'running', 21], [u'running', 22], [u'running', 23], [u'finished', 28], [u'running', 29], [u'transferring', 4], [u'finished', 8], [u'running', 59], [u'transferring', 58], [u'running', 55], [u'running', 54], [u'finished', 57], [u'running', 56], [u'transferring', 51], [u'transferring', 50], [u'finished', 53], [u'running', 52], [u'running', 88], [u'finished', 89], [u'finished', 82], [u'running', 83], [u'transferring', 80], [u'running', 81], [u'finished', 86], [u'running', 87], [u'finished', 84], [u'finished', 85], [u'finished', 3], [u'finished', 7], [u'running', 39], [u'running', 38], [u'finished', 33], [u'finished', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'running', 35], [u'finished', 34], [u'running', 60], [u'running', 61], [u'finished', 62], [u'transferring', 63], [u'running', 64], [u'running', 65], [u'running', 66], [u'running', 67], [u'transferring', 68], [u'running', 69], [u'finished', 2], [u'running', 6], [u'finished', 90], [u'finished', 11], [u'running', 10], [u'finished', 13], [u'finished', 12], [u'finished', 15], [u'finished', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'running', 18], [u'running', 48], [u'running', 49], [u'running', 46], [u'running', 47], [u'finished', 44], [u'finished', 45], [u'running', 42], [u'running', 43], [u'running', 40], [u'finished', 41], [u'running', 1], [u'running', 5], [u'finished', 9], [u'running', 77], [u'finished', 76], [u'finished', 75], [u'finished', 74], [u'running', 73], [u'running', 72], [u'running', 71], [u'transferring', 70], [u'transferring', 79], [u'transferring', 78]]}
+INFO 2017-03-21 22:26:40,317: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+INFO 2017-03-21 22:26:40,317: 	 Task name:			170321_225353:yofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+INFO 2017-03-21 22:26:40,318: 	 Grid scheduler:			crab3@vocms0199.cern.ch
+INFO 2017-03-21 22:26:40,318: 	 Task status:			SUBMITTED
+INFO 2017-03-21 22:26:40,318: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170321_225353%3Ayofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+INFO 2017-03-21 22:26:40,318: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170321_225353%3Ayofeng_crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324
+INFO 2017-03-21 22:26:40,318: 	 
+Jobs status:			finished       44.4% (40/90)
+INFO 2017-03-21 22:26:40,318: 	 				running        44.4% (40/90)
+INFO 2017-03-21 22:26:40,318: 	 				transferring   11.1% (10/90)
+INFO 2017-03-21 22:26:40,318: 	 
+Publication status:		idle           54.4% (49/90)
+				finished        1.1% ( 1/90)
+				unsubmitted    44.4% (40/90)
+INFO 2017-03-21 22:26:40,318: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170321-3916c1e008cecbed243ce9af6b0b45c9/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170321-3916c1e008cecbed243ce9af6b0b45c9%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-21 22:26:40,321: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170321-2017-0321-v8/crab_Analysis-20170321-GJet_Pt-15ToInf-2017-0321-185324/crab.log

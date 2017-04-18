@@ -1,0 +1,160 @@
+['skim', 'analyze']
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+
+####################
+Adding Skim step
+####################
+
+Adding GJet Skim step.
+triggerSelection should be verified for new datasets.
+photonID should be modified for each global tag.
+ switching PAT Tau input to:  cms.InputTag("hpsPFTauProducer76xReMiniAOD")
+
+####################
+Adding Analyze step
+####################
+
+CMSSW_VERSION is CMSSW_7_6_3
+Using the following global tags [MC, DATA]:
+['76X_mcRun2_asymptotic_RunIIFall15DR76_v1', '76X_dataRun2_16Dec2015_v0']
+DEBUG 2017-04-17 00:51:48,235: 	 Executing command: 'submit'
+DEBUG 2017-04-17 00:51:48,300: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-04-17 00:51:48,308: 	 Checking credentials
+DEBUG 2017-04-17 00:51:48,309: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-04-17 00:51:48,309: 	 Getting proxy life time left
+DEBUG 2017-04-17 00:51:48,416: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42914
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:48,521: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42914
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:48,522: 	 Proxy valid for 11:55:14 hours
+DEBUG 2017-04-17 00:51:48,524: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-04-17 00:51:48,877: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:48,878: 	 Checking credentials
+DEBUG 2017-04-17 00:51:48,878: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-04-17 00:51:48,878: 	 Getting proxy life time left
+DEBUG 2017-04-17 00:51:48,982: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 42914
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:49,090: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 42913
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:49,090: 	 Proxy valid for 11:55:14 hours
+DEBUG 2017-04-17 00:51:49,194: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:50,662: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-04-17 00:51:50,775: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:50,775: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-04-17 00:51:50,775: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-04-17 00:51:51,781: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 621:11:21  (25.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-04-17 00:51:51,783: 	 Myproxy is valid: 2236281
+DEBUG 2017-04-17 00:51:51,783: 	 Command use: submit
+DEBUG 2017-04-17 00:51:51,783: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x17f19d0>]
+DEBUG 2017-04-17 00:51:53,029: 	 CRABClient version: 3.3.1704
+DEBUG 2017-04-17 00:51:53,029: 	 Instance is prod
+DEBUG 2017-04-17 00:51:53,029: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-04-17 00:51:53,029: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-04-17 00:51:53,029: 	 Started submission
+DEBUG 2017-04-17 00:51:53,029: 	 Working on /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148
+DEBUG 2017-04-17 00:51:54,777: 	 Loading required information from the environment
+DEBUG 2017-04-17 00:51:54,777: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-04-17 00:51:54,777: 	 Loading required information from the environment
+DEBUG 2017-04-17 00:51:54,777: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-04-17 00:51:54,790: 	 UNIQUE NAME: tarUUID 0fa0f93e-9fd3-472e-bfc4-c3f08dd50cb8 
+DEBUG 2017-04-17 00:51:54,791: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crabTasks/crab_Analysis-20170416-2017-0417-v11'
+config.General.requestName = 'Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148'
+config.section_('JobType')
+config.JobType.priority = 30
+config.JobType.psetName = 'Configuration/test/test_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.pyCfgParams = ['crab=1', 'data=0', 'sample=gjet']
+config.section_('Data')
+config.Data.inputDataset = '/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM'
+config.Data.outputDatasetTag = 'Analysis-20170416'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/yofeng/GJet/ntuple/Analysis-20170416-v11/pT35To90/GJets_HT-400To600_RunIIFall15DR76/'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.blacklist = ['T2_US_Purdue']
+config.Site.storageSite = 'T3_US_UMD'
+
+DEBUG 2017-04-17 00:51:54,791: 	 self.config.JobType.psetName: Configuration/test/test_cfg.py
+INFO 2017-04-17 00:51:54,792: 	 Importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-04-17 00:51:54,792: 	 Additional parameters for the CMSSW configuration are: ['crab=1', 'data=0', 'sample=gjet']
+INFO 2017-04-17 00:52:05,524: 	 Finished importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-04-17 00:52:05,524: 	 Writing CMSSW configuration to /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148/inputs/PSet.py
+DEBUG 2017-04-17 00:52:09,055: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2017-04-17 00:52:09,056: 	 The following TFile output files will be collected: ['ntuple.root']
+DEBUG 2017-04-17 00:52:09,056: 	 The following user output files will be collected: []
+DEBUG 2017-04-17 00:52:09,056: 	 Loading required information from the environment
+DEBUG 2017-04-17 00:52:09,056: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-04-17 00:52:09,056: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148/inputs/0fa0f93e-9fd3-472e-bfc4-c3f08dd50cb8default.tgz
+DEBUG 2017-04-17 00:52:09,248: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/lib
+DEBUG 2017-04-17 00:52:09,248: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/lib to tarball
+DEBUG 2017-04-17 00:52:12,663: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/biglib
+DEBUG 2017-04-17 00:52:12,664: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/biglib to tarball
+DEBUG 2017-04-17 00:52:12,666: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/module
+DEBUG 2017-04-17 00:52:13,252: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2017-04-17 00:52:13,279: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2017-04-17 00:52:13,296: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/data to tarball
+DEBUG 2017-04-17 00:52:13,303: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/interface to tarball
+DEBUG 2017-04-17 00:52:13,484: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmergingJetAnalyzer/interface to tarball
+DEBUG 2017-04-17 00:52:13,540: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmJetAnalyzer/interface to tarball
+DEBUG 2017-04-17 00:52:20,721: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148/inputs/0fa0f93e-9fd3-472e-bfc4-c3f08dd50cb8default.tgz (6.730469.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-04-17 00:52:26,795: 	 Loading required information from the environment
+DEBUG 2017-04-17 00:52:26,796: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-04-17 00:52:26,796: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148/inputs/debugFiles.tgz
+DEBUG 2017-04-17 00:52:26,866: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170416-2017-0417-v11/crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-04-17 00:52:28,390: 	 Result uploading input files: 276fa9a7047aee68e52c27ab83548adc2a6ac51e9e844899ebe2cf8d8ecc525c.tar.gz 
+WARNING 2017-04-17 00:52:28,390: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple.root']
+INFO 2017-04-17 00:52:28,391: 	 Sending the request to the server
+DEBUG 2017-04-17 00:52:28,391: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_UMD', 'algoargs': 1, 'cachefilename': '276fa9a7047aee68e52c27ab83548adc2a6ac51e9e844899ebe2cf8d8ecc525c.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 30, 'jobsw': 'CMSSW_7_6_3', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', 'lfn': '/store/user/yofeng/GJet/ntuple/Analysis-20170416-v11/pT35To90/GJets_HT-400To600_RunIIFall15DR76/', 'dryrun': 0, 'workflow': 'crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ntuple.root'], 'oneEventMode': 0, 'debugfilename': '89017c92dea7a5ea2dc37bc34a8b947e3bd7cc437531934f899c9d3810a02ac2.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc493', 'totalunits': 1000, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'siteblacklist': ['T2_US_Purdue'], 'publishname2': 'Analysis-20170416'} 
+DEBUG 2017-04-17 00:52:28,392: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T3_US_UMD&algoargs=1&cachefilename=276fa9a7047aee68e52c27ab83548adc2a6ac51e9e844899ebe2cf8d8ecc525c.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=30&jobsw=CMSSW_7_6_3&primarydataset=&inputdata=%2FGJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8%2FRunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1%2FAODSIM&lfn=%2Fstore%2Fuser%2Fyofeng%2FGJet%2Fntuple%2FAnalysis-20170416-v11%2FpT35To90%2FGJets_HT-400To600_RunIIFall15DR76%2F&dryrun=0&workflow=crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=89017c92dea7a5ea2dc37bc34a8b947e3bd7cc437531934f899c9d3810a02ac2.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc493&totalunits=1000&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Analysis-20170416&siteblacklist=T2_US_Purdue&tfileoutfiles=ntuple.root&edmoutfiles=output.root
+DEBUG 2017-04-17 00:52:30,104: 	 Result: {u'result': [{u'RequestName': u'170417_045229:yofeng_crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148'}]}
+INFO 2017-04-17 00:52:30,166: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-04-17 00:52:30,166: 	 Task name: 170417_045229:yofeng_crab_Analysis-20170416-GJets_HT-400To600_RunIIFall15DR76-2017-0417-005148
+INFO 2017-04-17 00:52:30,166: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-04-17 00:52:30,166: 	 About to return

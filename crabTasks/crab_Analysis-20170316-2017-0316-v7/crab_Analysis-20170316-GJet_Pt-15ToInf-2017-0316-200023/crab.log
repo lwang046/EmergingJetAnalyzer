@@ -1,0 +1,328 @@
+['skim', 'analyze']
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+
+####################
+Adding Skim step
+####################
+
+Adding GJet Skim step.
+triggerSelection should be verified for new datasets.
+photonID should be modified for each global tag.
+ switching PAT Tau input to:  cms.InputTag("hpsPFTauProducer76xReMiniAOD")
+
+####################
+Adding Analyze step
+####################
+
+CMSSW_VERSION is CMSSW_7_6_3
+Using the following global tags [MC, DATA]:
+['76X_mcRun2_asymptotic_RunIIFall15DR76_v1', '76X_dataRun2_16Dec2015_v0']
+DEBUG 2017-03-16 20:00:23,891: 	 Executing command: 'submit'
+DEBUG 2017-03-16 20:00:23,924: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-16 20:00:23,931: 	 Checking credentials
+DEBUG 2017-03-16 20:00:23,932: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 20:00:23,932: 	 Getting proxy life time left
+DEBUG 2017-03-16 20:00:24,035: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43174
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:24,138: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43173
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:24,139: 	 Proxy valid for 11:59:34 hours
+DEBUG 2017-03-16 20:00:24,139: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-03-16 20:00:24,518: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:24,518: 	 Checking credentials
+DEBUG 2017-03-16 20:00:24,518: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 20:00:24,518: 	 Getting proxy life time left
+DEBUG 2017-03-16 20:00:24,621: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43173
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:24,725: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43173
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:24,725: 	 Proxy valid for 11:59:33 hours
+DEBUG 2017-03-16 20:00:24,828: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1701 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:26,558: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-16 20:00:26,666: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:26,666: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-16 20:00:26,666: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-16 20:00:28,071: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 716:13:35  (29.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 20:00:28,072: 	 Myproxy is valid: 2578415
+DEBUG 2017-03-16 20:00:28,072: 	 Command use: submit
+DEBUG 2017-03-16 20:00:28,072: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x25c8950>]
+DEBUG 2017-03-16 20:00:29,160: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-16 20:00:29,160: 	 Instance is prod
+DEBUG 2017-03-16 20:00:29,160: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-16 20:00:29,160: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-16 20:00:29,160: 	 Started submission
+DEBUG 2017-03-16 20:00:29,160: 	 Working on /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+DEBUG 2017-03-16 20:00:31,443: 	 Loading required information from the environment
+DEBUG 2017-03-16 20:00:31,443: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-16 20:00:31,443: 	 Loading required information from the environment
+DEBUG 2017-03-16 20:00:31,443: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-16 20:00:31,518: 	 UNIQUE NAME: tarUUID 5bafd342-2079-4392-ac3b-0c35a7aba6a3 
+DEBUG 2017-03-16 20:00:31,519: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crabTasks/crab_Analysis-20170316-2017-0316-v7'
+config.General.requestName = 'Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023'
+config.section_('JobType')
+config.JobType.priority = 30
+config.JobType.psetName = 'Configuration/test/test_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.pyCfgParams = ['crab=1', 'data=0', 'sample=gjet']
+config.section_('Data')
+config.Data.inputDataset = '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM'
+config.Data.outputDatasetTag = 'Analysis-20170316'
+config.Data.publication = True
+config.Data.unitsPerJob = 1
+config.Data.ignoreLocality = True
+config.Data.splitting = 'FileBased'
+config.Data.inputDBS = 'global'
+config.Data.outLFNDirBase = '/store/user/yofeng/GJet/ntuple/Analysis-20170316-v7/GJet_Pt-15ToInf/'
+config.Data.totalUnits = 1000
+config.section_('Site')
+config.Site.blacklist = ['T2_US_Purdue']
+config.Site.storageSite = 'T3_US_UMD'
+
+DEBUG 2017-03-16 20:00:31,519: 	 self.config.JobType.psetName: Configuration/test/test_cfg.py
+INFO 2017-03-16 20:00:31,545: 	 Importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-16 20:00:31,546: 	 Additional parameters for the CMSSW configuration are: ['crab=1', 'data=0', 'sample=gjet']
+INFO 2017-03-16 20:00:40,522: 	 Finished importing CMSSW configuration Configuration/test/test_cfg.py
+DEBUG 2017-03-16 20:00:40,522: 	 Writing CMSSW configuration to /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/inputs/PSet.py
+DEBUG 2017-03-16 20:00:43,741: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2017-03-16 20:00:43,741: 	 The following TFile output files will be collected: ['ntuple.root']
+DEBUG 2017-03-16 20:00:43,741: 	 The following user output files will be collected: []
+DEBUG 2017-03-16 20:00:43,741: 	 Loading required information from the environment
+DEBUG 2017-03-16 20:00:43,742: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-16 20:00:43,742: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/inputs/5bafd342-2079-4392-ac3b-0c35a7aba6a3default.tgz
+DEBUG 2017-03-16 20:00:43,892: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/lib
+DEBUG 2017-03-16 20:00:43,892: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/lib to tarball
+DEBUG 2017-03-16 20:00:49,220: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/biglib
+DEBUG 2017-03-16 20:00:49,220: 	 Adding directory /data/users/fengyb/CMSSW_7_6_3/biglib to tarball
+DEBUG 2017-03-16 20:00:49,229: 	 Checking directory /data/users/fengyb/CMSSW_7_6_3/module
+DEBUG 2017-03-16 20:00:50,142: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2017-03-16 20:00:50,237: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2017-03-16 20:00:50,612: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/data to tarball
+DEBUG 2017-03-16 20:00:50,741: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/RecoEgamma/PhotonIdentification/interface to tarball
+DEBUG 2017-03-16 20:00:51,375: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmergingJetAnalyzer/interface to tarball
+DEBUG 2017-03-16 20:00:51,765: 	 Adding data directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/EmJetAnalyzer/interface to tarball
+DEBUG 2017-03-16 20:00:55,323: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/inputs/5bafd342-2079-4392-ac3b-0c35a7aba6a3default.tgz (6.702148.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-16 20:01:01,477: 	 Loading required information from the environment
+DEBUG 2017-03-16 20:01:01,477: 	 Found CMSSW_7_6_3 for slc6_amd64_gcc493 with base /data/users/fengyb/CMSSW_7_6_3
+DEBUG 2017-03-16 20:01:01,477: 	 Making tarball in /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/inputs/debugFiles.tgz
+DEBUG 2017-03-16 20:01:01,555: 	 Uploading archive /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-03-16 20:01:03,313: 	 Result uploading input files: d802436ffcceeb2a0e279a46ee65828c6d3593b04d75ad82389bd7e2405a0cb2.tar.gz 
+WARNING 2017-03-16 20:01:03,313: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple.root']
+INFO 2017-03-16 20:01:03,313: 	 Sending the request to the server
+DEBUG 2017-03-16 20:01:03,313: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T3_US_UMD', 'algoargs': 1, 'cachefilename': 'd802436ffcceeb2a0e279a46ee65828c6d3593b04d75ad82389bd7e2405a0cb2.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 30, 'jobsw': 'CMSSW_7_6_3', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/RunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1/AODSIM', 'lfn': '/store/user/yofeng/GJet/ntuple/Analysis-20170316-v7/GJet_Pt-15ToInf/', 'dryrun': 0, 'workflow': 'crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ntuple.root'], 'oneEventMode': 0, 'debugfilename': '68f0eb25470b1c3c99c4a402ebb5a5f0da9407a38ed0cdfd03ccb96f9bded404.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc493', 'totalunits': 1000, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'siteblacklist': ['T2_US_Purdue'], 'publishname2': 'Analysis-20170316'} 
+DEBUG 2017-03-16 20:01:03,314: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T3_US_UMD&algoargs=1&cachefilename=d802436ffcceeb2a0e279a46ee65828c6d3593b04d75ad82389bd7e2405a0cb2.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=30&jobsw=CMSSW_7_6_3&primarydataset=&inputdata=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2FRunIIFall15DR76-PU25nsData2015v1_76X_mcRun2_asymptotic_v12-v1%2FAODSIM&lfn=%2Fstore%2Fuser%2Fyofeng%2FGJet%2Fntuple%2FAnalysis-20170316-v7%2FGJet_Pt-15ToInf%2F&dryrun=0&workflow=crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=68f0eb25470b1c3c99c4a402ebb5a5f0da9407a38ed0cdfd03ccb96f9bded404.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc493&totalunits=1000&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Analysis-20170316&siteblacklist=T2_US_Purdue&tfileoutfiles=ntuple.root&edmoutfiles=output.root
+DEBUG 2017-03-16 20:01:04,722: 	 Result: {u'result': [{u'RequestName': u'170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023'}]}
+INFO 2017-03-16 20:01:04,788: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-03-16 20:01:04,788: 	 Task name: 170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 20:01:04,788: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-03-16 20:01:04,789: 	 About to return
+DEBUG 2017-03-16 22:53:28,399: 	 Executing command: 'status'
+DEBUG 2017-03-16 22:53:28,400: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-16 22:53:28,406: 	 Checking credentials
+DEBUG 2017-03-16 22:53:28,406: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 22:53:28,406: 	 Getting proxy life time left
+DEBUG 2017-03-16 22:53:28,510: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43138
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:28,613: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43137
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:28,613: 	 Proxy valid for 11:58:58 hours
+DEBUG 2017-03-16 22:53:28,731: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:28,731: 	 Checking credentials
+DEBUG 2017-03-16 22:53:28,731: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 22:53:28,731: 	 Getting proxy life time left
+DEBUG 2017-03-16 22:53:28,835: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43138
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:28,938: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43137
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:28,938: 	 Proxy valid for 11:58:58 hours
+DEBUG 2017-03-16 22:53:30,041: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-16 22:53:30,149: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:30,149: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-16 22:53:30,149: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-16 22:53:30,853: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 713:20:33  (29.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:30,854: 	 Myproxy is valid: 2568033
+DEBUG 2017-03-16 22:53:30,854: 	 Command use: status
+DEBUG 2017-03-16 22:53:30,854: 	 Options use: ['-d', 'crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/']
+DEBUG 2017-03-16 22:53:31,974: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-16 22:53:31,974: 	 Instance is prod
+DEBUG 2017-03-16 22:53:31,974: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-16 22:53:31,974: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-16 22:53:31,974: 	 Looking up detailed status of task 170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+DEBUG 2017-03-16 22:53:33,981: 	 {u'status': u'SUBMITTED', u'username': u'yofeng', u'jobsPerStatus': {u'failed': 3, u'running': 50, u'transferring': 13, u'finished': 24}, u'jobs': {u'24': {u'State': u'running'}, u'25': {u'State': u'finished'}, u'26': {u'State': u'running'}, u'27': {u'State': u'finished'}, u'20': {u'State': u'running'}, u'21': {u'State': u'running'}, u'22': {u'State': u'running'}, u'23': {u'State': u'finished'}, u'28': {u'State': u'transferring'}, u'29': {u'State': u'transferring'}, u'4': {u'State': u'running'}, u'8': {u'State': u'finished'}, u'59': {u'State': u'running'}, u'58': {u'State': u'running'}, u'55': {u'State': u'transferring'}, u'54': {u'State': u'running'}, u'57': {u'State': u'finished'}, u'56': {u'State': u'running'}, u'51': {u'State': u'transferring'}, u'50': {u'State': u'transferring'}, u'53': {u'State': u'finished'}, u'52': {u'State': u'running'}, u'88': {u'State': u'failed', u'Error': [8022, u'CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H\n', {u'type': u'Fatal Exception', u'details': u'An exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H', u'exitCode': u'8022'}]}, u'89': {u'State': u'finished'}, u'82': {u'State': u'transferring'}, u'83': {u'State': u'transferring'}, u'80': {u'State': u'running'}, u'81': {u'State': u'running'}, u'86': {u'State': u'transferring'}, u'87': {u'State': u'running'}, u'84': {u'State': u'running'}, u'85': {u'State': u'running'}, u'3': {u'State': u'running'}, u'7': {u'State': u'running'}, u'39': {u'State': u'running'}, u'38': {u'State': u'transferring'}, u'33': {u'State': u'running'}, u'32': {u'State': u'running'}, u'31': {u'State': u'finished'}, u'30': {u'State': u'finished'}, u'37': {u'State': u'finished'}, u'36': {u'State': u'finished'}, u'35': {u'State': u'transferring'}, u'34': {u'State': u'finished'}, u'60': {u'State': u'finished'}, u'61': {u'State': u'running'}, u'62': {u'State': u'transferring'}, u'63': {u'State': u'finished'}, u'64': {u'State': u'running'}, u'65': {u'State': u'running'}, u'66': {u'State': u'running'}, u'67': {u'State': u'running'}, u'68': {u'State': u'finished'}, u'69': {u'State': u'finished'}, u'2': {u'State': u'running'}, u'6': {u'State': u'running'}, u'90': {u'State': u'transferring'}, u'11': {u'State': u'running'}, u'10': {u'State': u'running'}, u'13': {u'State': u'finished'}, u'12': {u'State': u'running'}, u'15': {u'State': u'finished'}, u'14': {u'State': u'running'}, u'17': {u'State': u'finished'}, u'16': {u'State': u'finished'}, u'19': {u'State': u'finished'}, u'18': {u'State': u'running'}, u'48': {u'State': u'running'}, u'49': {u'State': u'running'}, u'46': {u'State': u'running'}, u'47': {u'State': u'running'}, u'44': {u'State': u'running'}, u'45': {u'State': u'running'}, u'42': {u'State': u'running'}, u'43': {u'State': u'running'}, u'40': {u'State': u'transferring'}, u'41': {u'State': u'running'}, u'1': {u'State': u'running'}, u'5': {u'State': u'failed', u'Error': [8022, u'CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H\n', {u'type': u'Fatal Exception', u'details': u'An exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H', u'exitCode': u'8022'}]}, u'9': {u'State': u'finished'}, u'77': {u'State': u'running'}, u'76': {u'State': u'finished'}, u'75': {u'State': u'running'}, u'74': {u'State': u'failed', u'Error': [8022, u'CmsRunFailure\nCMSSW error message follows.\nFatal Exception\nAn exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H\n', {u'type': u'Fatal Exception', u'details': u'An exception of category \'FatalRootError\' occurred while\n   [0] Constructing the EventProcessor\n   [1] Constructing service of type TFileService\n   Additional Info:\n      [a] Fatal Root Error: @SUB=TInterpreter::AutoParse\nError parsing payload code for class TStorageFactoryFile with content:\n\n\n#ifndef G__VECTOR_HAS_CLASS_ITERATOR\n  #define G__VECTOR_HAS_CLASS_ITERATOR 1\n#endif\n#ifndef CMS_DICT_IMPL\n  #define CMS_DICT_IMPL 1\n#endif\n#ifndef _REENTRANT\n  #define _REENTRANT 1\n#endif\n#ifndef GNUSOURCE\n  #define GNUSOURCE 1\n#endif\n#ifndef __STRICT_ANSI__\n  #define __STRICT_ANSI__ 1\n#endif\n#ifndef GNU_GCC\n  #define GNU_GCC 1\n#endif\n#ifndef _GNU_SOURCE\n  #define _GNU_SOURCE 1\n#endif\n#ifndef CMSSW_GIT_HASH\n  #define CMSSW_GIT_HASH "CMSSW_7_6_3"\n#endif\n#ifndef PROJECT_NAME\n  #define PROJECT_NAME "CMSSW"\n#endif\n#ifndef PROJECT_VERSION\n  #define PROJECT_VERSION "CMSSW_7_6_3"\n#endif\n#ifndef BOOST_SPIRIT_THREADSAFE\n  #define BOOST_SPIRIT_THREADSAFE 1\n#endif\n#ifndef PHOENIX_THREADSAFE\n  #define PHOENIX_THREADSAFE 1\n#endif\n#ifndef CMSSW_REFLEX_DICT\n  #define CMSSW_REFLEX_DICT 1\n#endif\n\n#define _BACKWARD_BACKWARD_WARNING_H\n#include "IOPool/TFileAdaptor/interface/TStorageFactoryFile.h"\n#include "IOPool/TFileAdaptor/interface/TStorageFactorySystem.h"\n#include "IOPool/TFileAdaptor/src/TFileAdaptor.h"\n\n#undef  _BACKWARD_BACKWARD_WARNING_H', u'exitCode': u'8022'}]}, u'73': {u'State': u'running'}, u'72': {u'State': u'running'}, u'71': {u'State': u'running'}, u'70': {u'State': u'running'}, u'79': {u'State': u'finished'}, u'78': {u'State': u'running'}}, u'publication': {u'publishing': 0, u'publication_failed': 0, u'not_published': 36, u'published': 1}, u'taskWarningMsg': [], u'schedd': u'crab3@vocms0195.cern.ch', u'publicationFailures': {}, u'outdatasets': [u'/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170316-3916c1e008cecbed243ce9af6b0b45c9/USER'], u'statusFailureMsg': u'', u'taskFailureMsg': u'', u'failedJobdefs': 0, u'ASOURL': u'https://cmsweb.cern.ch/couchdb2', u'command': u'SUBMIT', u'totalJobdefs': 0, u'submissionTime': 1489708864, u'jobdefErrors': [], u'collector': u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'jobList': [[u'running', 24], [u'finished', 25], [u'running', 26], [u'finished', 27], [u'running', 20], [u'running', 21], [u'running', 22], [u'finished', 23], [u'transferring', 28], [u'transferring', 29], [u'running', 4], [u'finished', 8], [u'running', 59], [u'running', 58], [u'transferring', 55], [u'running', 54], [u'finished', 57], [u'running', 56], [u'transferring', 51], [u'transferring', 50], [u'finished', 53], [u'running', 52], [u'failed', 88], [u'finished', 89], [u'transferring', 82], [u'transferring', 83], [u'running', 80], [u'running', 81], [u'transferring', 86], [u'running', 87], [u'running', 84], [u'running', 85], [u'running', 3], [u'running', 7], [u'running', 39], [u'transferring', 38], [u'running', 33], [u'running', 32], [u'finished', 31], [u'finished', 30], [u'finished', 37], [u'finished', 36], [u'transferring', 35], [u'finished', 34], [u'finished', 60], [u'running', 61], [u'transferring', 62], [u'finished', 63], [u'running', 64], [u'running', 65], [u'running', 66], [u'running', 67], [u'finished', 68], [u'finished', 69], [u'running', 2], [u'running', 6], [u'transferring', 90], [u'running', 11], [u'running', 10], [u'finished', 13], [u'running', 12], [u'finished', 15], [u'running', 14], [u'finished', 17], [u'finished', 16], [u'finished', 19], [u'running', 18], [u'running', 48], [u'running', 49], [u'running', 46], [u'running', 47], [u'running', 44], [u'running', 45], [u'running', 42], [u'running', 43], [u'transferring', 40], [u'running', 41], [u'running', 1], [u'failed', 5], [u'finished', 9], [u'running', 77], [u'finished', 76], [u'running', 75], [u'failed', 74], [u'running', 73], [u'running', 72], [u'running', 71], [u'running', 70], [u'finished', 79], [u'running', 78]]}
+INFO 2017-03-16 22:53:33,981: 	 CRAB project directory:		/data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 22:53:33,981: 	 Task name:			170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 22:53:33,981: 	 Grid scheduler:			crab3@vocms0195.cern.ch
+INFO 2017-03-16 22:53:33,981: 	 Task status:			SUBMITTED
+INFO 2017-03-16 22:53:33,982: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/170317_000104%3Ayofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 22:53:33,982: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=yofeng&table=Mains&pattern=170317_000104%3Ayofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 22:53:33,982: 	 
+Jobs status:			failed          3.3% ( 3/90)
+INFO 2017-03-16 22:53:33,982: 	 				finished       26.7% (24/90)
+INFO 2017-03-16 22:53:33,982: 	 				running        55.6% (50/90)
+INFO 2017-03-16 22:53:33,982: 	 				transferring   14.4% (13/90)
+INFO 2017-03-16 22:53:33,982: 	 
+Publication status:		idle           40.0% (36/90)
+				finished        1.1% ( 1/90)
+				unsubmitted    58.9% (53/90)
+INFO 2017-03-16 22:53:33,982: 	 
+Output dataset:			/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/yofeng-Analysis-20170316-3916c1e008cecbed243ce9af6b0b45c9/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FGJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8%2Fyofeng-Analysis-20170316-3916c1e008cecbed243ce9af6b0b45c9%2FUSER&instance=prod%2Fphys03
+INFO 2017-03-16 22:53:33,982: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 3 jobs failed with exit code 8022
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2017-03-16 22:53:34,017: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/crab.log
+DEBUG 2017-03-16 22:53:41,200: 	 Executing command: 'resubmit'
+DEBUG 2017-03-16 22:53:41,200: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-16 22:53:41,207: 	 Checking credentials
+DEBUG 2017-03-16 22:53:41,207: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 22:53:41,207: 	 Getting proxy life time left
+DEBUG 2017-03-16 22:53:41,310: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43125
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:41,414: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43124
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:41,414: 	 Proxy valid for 11:58:45 hours
+DEBUG 2017-03-16 22:53:41,529: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:41,529: 	 Checking credentials
+DEBUG 2017-03-16 22:53:41,529: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 22:53:41,529: 	 Getting proxy life time left
+DEBUG 2017-03-16 22:53:41,632: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43125
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:41,735: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43124
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:41,736: 	 Proxy valid for 11:58:45 hours
+DEBUG 2017-03-16 22:53:43,141: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+DEBUG 2017-03-16 22:53:43,250: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:43,250: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-03-16 22:53:43,251: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng_cmsweb.cern.ch for credential name
+DEBUG 2017-03-16 22:53:43,957: 	 Executing : 
+ command : myproxy-info -l 46a32ae7e95f6185805e22dd0e47513ea7de8fa0 -s myproxy.cern.ch
+ output : username: 46a32ae7e95f6185805e22dd0e47513ea7de8fa0
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=yofeng/CN=785825/CN=Yongbin Feng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105).cern.ch
+  timeleft: 713:20:20  (29.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 22:53:43,958: 	 Myproxy is valid: 2568020
+DEBUG 2017-03-16 22:53:43,958: 	 Command use: resubmit
+DEBUG 2017-03-16 22:53:43,958: 	 Options use: ['-d', 'crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/']
+DEBUG 2017-03-16 22:53:45,285: 	 CRABClient version: 3.3.1703
+DEBUG 2017-03-16 22:53:45,285: 	 Instance is prod
+DEBUG 2017-03-16 22:53:45,286: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-03-16 22:53:45,286: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-03-16 22:53:45,286: 	 Requesting resubmission of failed jobs in task 170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+INFO 2017-03-16 22:53:45,286: 	 Sending resubmit request to the server.
+DEBUG 2017-03-16 22:53:45,286: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': u'170317_000104:yofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023'} 
+DEBUG 2017-03-16 22:53:45,286: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=170317_000104%3Ayofeng_crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023
+DEBUG 2017-03-16 22:53:48,114: 	 Result: {u'result': [{u'result': u'ok'}], u'desc': {u'columns': [u'tm_site_blacklist', u'tm_site_whitelist', u'tm_maxjobruntime', u'tm_maxmemory', u'tm_numcores', u'tm_priority']}}
+INFO 2017-03-16 22:53:48,114: 	 Resubmit request sent to the server.
+INFO 2017-03-16 22:53:48,114: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2017-03-16 22:53:48,120: 	 Log file is /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v7/crab_Analysis-20170316-GJet_Pt-15ToInf-2017-0316-200023/crab.log

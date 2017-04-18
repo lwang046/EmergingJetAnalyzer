@@ -1,0 +1,15 @@
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJet_Pt-15ToInf/GJet_Pt-15ToInf_TuneCUETP8M1_13TeV-pythia8/Analysis-20170321/170321_225353/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJetDataRun2015D-v3/SinglePhoton/Analysis-20170321/170321_225422/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJetDataRun2015D-v4/SinglePhoton/Analysis-20170321/170321_225449/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-600ToInf_RunIIFall15DR76/GJets_HT-600ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170321_225519/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-400To600_RunIIFall15DR76/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170321_225546/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-200To400_RunIIFall15DR76/GJets_HT-200To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170321_225613/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-100To200_RunIIFall15DR76/GJets_HT-100To200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170321_225641/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-40To100_RunIIFall15DR76/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170321_225721/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJet_Pt-15To6000-Flat/GJet_Pt-15To6000_TuneCUETP8M1-Flat_13TeV_pythia8/Analysis-20170321/170321_225752/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-600ToInf_RunIIFall15DR76/GJets_HT-600ToInf_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170322_002357/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-400To600_RunIIFall15DR76/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170322_002424/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-200To400_RunIIFall15DR76/GJets_HT-200To400_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170322_002450/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-100To200_RunIIFall15DR76/GJets_HT-100To200_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170322_002521/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJets_HT-40To100_RunIIFall15DR76/GJets_HT-40To100_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170321/170322_002548/
+/store/user/yofeng/GJet/ntuple/Analysis-20170321-v8/GJet_Pt-15To6000-Flat/GJet_Pt-15To6000_TuneCUETP8M1-Flat_13TeV_pythia8/Analysis-20170321/170322_002614/

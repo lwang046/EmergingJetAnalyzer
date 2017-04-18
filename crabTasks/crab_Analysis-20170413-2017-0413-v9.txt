@@ -1,0 +1,3 @@
+/store/user/yofeng/GJet/ntuple/Analysis-20170413-v9/WJetsToLNuInclusive/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/Analysis-20170413/170413_041446/
+/store/user/yofeng/GJet/ntuple/Analysis-20170413-v9/GJets_HT-400To600_RunIIFall15DR76/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170413/170413_041545/
+/store/user/yofeng/GJet/ntuple/Analysis-20170413-v9/pT35To90/GJets_HT-400To600_RunIIFall15DR76/GJets_HT-400To600_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Analysis-20170413/170413_151045/

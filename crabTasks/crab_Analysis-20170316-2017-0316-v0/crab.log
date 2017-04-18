@@ -1,0 +1,30 @@
+DEBUG 2017-03-16 01:00:17,573: 	 Executing command: 'status'
+DEBUG 2017-03-16 01:00:17,574: 	 Found CRAB cache file /home/fengyb/.crab3
+DEBUG 2017-03-16 01:00:17,586: 	 Checking credentials
+DEBUG 2017-03-16 01:00:17,587: 	 Found proxy file /tmp/x509up_u1701
+DEBUG 2017-03-16 01:00:17,587: 	 Getting proxy life time left
+DEBUG 2017-03-16 01:00:17,695: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -timeleft
+ output : 43084
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 01:00:17,800: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1701 -actimeleft
+ output : 43084
+
+ error: 
+ retcode : 0
+DEBUG 2017-03-16 01:00:17,801: 	 Proxy valid for 11:58:04 hours
+ERROR 2017-03-16 01:00:17,802: 	 Cannot find .requestcache file in CRAB project directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v0/crab_Analysis-20170316-WJetsToLNuInclusive-2017-0316-005749
+ERROR 2017-03-16 01:00:17,803: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1703/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1703/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1703/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 321, in __init__
+    self.loadLocalCache(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1703/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 450, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /data/users/fengyb/CMSSW_7_6_3/src/EmergingJetAnalysis/crabTasks/crab_Analysis-20170316-2017-0316-v0/crab_Analysis-20170316-WJetsToLNuInclusive-2017-0316-005749

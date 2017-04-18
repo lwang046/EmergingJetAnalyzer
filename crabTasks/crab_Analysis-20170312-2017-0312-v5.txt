@@ -1,0 +1,1 @@
+/store/user/yofeng/GJet/ntuple/Analysis-20170312-v5/GJet_Pt-15To6000-Flat_PhotonPtcut175/GJet_Pt-15To6000_TuneCUETP8M1-Flat_13TeV_pythia8/Analysis-20170312/170312_201804/
